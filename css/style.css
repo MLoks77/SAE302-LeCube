@@ -1,3 +1,14 @@
+.rubik-mono {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */
