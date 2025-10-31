@@ -1,100 +1,113 @@
 <!DOCTYPE html>
-<html lang="fr" >
+<html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <title>Le Cube</title>
-  <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"><link rel="stylesheet" href="../css/rubik.css">
+  <meta name="viewport"
+    content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+  <link rel="stylesheet" href="../css/rubik.css">
   <!-- source du jeux : https://codetap.org/project/rubiks-cube-game @coding.stella-->
   <!-- traduction : Maxime Derènes -->
+
+  <link rel="icon" type="image/png" href="../images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../images/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="../images/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Le Cube" />
+  <link rel="manifest" href="../images/favicon/site.webmanifest" />
 </head>
+
 <body>
 
-<div class="ui">
+  <div class="ui">
 
-  <div class="ui__background"></div>
+    <div class="ui__background"></div>
 
-  <div class="ui__game"></div>
+    <div class="ui__game"></div>
 
-  <div class="ui__texts">
-    <h1 class="text text--title">
-      <span>Le</span>
-      <span>cube</span>
-    </h1>
-    <div class="text text--note">
-      Double clic pour commencer
+    <div class="ui__texts">
+      <h1 class="text text--title">
+        <span>Le</span>
+        <span>cube</span>
+      </h1>
+      <div class="text text--note">
+        Double clic pour commencer
+      </div>
+      <div class="text text--timer">
+        0:00
+      </div>
+      <div class="text text--complete">
+        <span>Finis !</span>
+      </div>
+      <div class="text text--best-time">
+        <icon trophy></icon>
+        <span>Meilleur temps !</span>
+      </div>
     </div>
-    <div class="text text--timer">
-      0:00
+
+    <div class="ui__prefs">
+      <range name="size" title="Taille du cube" list="2,3,4,5"></range>
+      <range name="flip" title="Effet de rotation" list="Swift&nbsp;,Smooth,Bounce"></range>
+      <range name="scramble" title="Longueur du melange" list="20,25,30"></range>
+      <range name="fov" title="Angle de camera" list="Ortographic,Perspective"></range>
+      <range name="theme" title="Theme" list="Cube,Erno,Sable,Camo,Pluie"></range>
     </div>
-    <div class="text text--complete">
-      <span>Finis !</span>
+
+    <div class="ui__theme">
+      <range name="hue" title="Hue" color></range>
+      <range name="saturation" title="Saturation" color></range>
+      <range name="lightness" title="Luminosite" color></range>
     </div>
-    <div class="text text--best-time">
-      <icon trophy></icon>
-      <span>Meilleur temps !</span>
+
+    <div class="ui__stats">
+      <div class="stats" name="cube-size">
+        <i>Cube:</i><b>3x3x3</b>
+      </div>
+      <div class="stats" name="total-solves">
+        <i>Total:</i><b>-</b>
+      </div>
+      <div class="stats" name="best-time">
+        <i>Meilleur temps:</i><b>-</b>
+      </div>
+      <div class="stats" name="worst-time">
+        <i>Pire temps:</i><b>-</b>
+      </div>
+      <div class="stats" name="average-5">
+        <i>Moyenne de 5:</i><b>-</b>
+      </div>
+      <div class="stats" name="average-12">
+        <i>Moyenne de 12:</i><b>-</b>
+      </div>
+      <div class="stats" name="average-25">
+        <i>Moyenne de 25:</i><b>-</b>
+      </div>
     </div>
+
+
+    <div class="ui__buttons">
+      <button class="btn btn--bl btn--stats">
+        <icon trophy></icon>
+      </button>
+      <button class="btn btn--br btn--prefs">
+        <icon settings></icon>
+      </button>
+      <button class="btn btn--bl btn--back">
+        <icon back></icon>
+      </button>
+      <button class="btn btn--br btn--theme">
+        <icon theme></icon>
+      </button>
+      <button class="btn btn--br btn--reset">
+        <icon reset></icon>
+      </button>
+    </div>
+
   </div>
 
-  <div class="ui__prefs">
-    <range name="size" title="Taille du cube" list="2,3,4,5"></range>
-    <range name="flip" title="Effet de rotation" list="Swift&nbsp;,Smooth,Bounce"></range>
-    <range name="scramble" title="Longueur du melange" list="20,25,30"></range>
-    <range name="fov" title="Angle de camera" list="Ortographic,Perspective"></range>
-    <range name="theme" title="Theme" list="Cube,Erno,Sable,Camo,Pluie"></range>
-  </div>
-
-  <div class="ui__theme">
-    <range name="hue" title="Hue" color></range>
-    <range name="saturation" title="Saturation" color></range>
-    <range name="lightness" title="Luminosite" color></range>
-  </div>
-
-  <div class="ui__stats">
-    <div class="stats" name="cube-size">
-      <i>Cube:</i><b>3x3x3</b>
-    </div>
-    <div class="stats" name="total-solves">
-      <i>Total:</i><b>-</b>
-    </div>
-    <div class="stats" name="best-time">
-      <i>Meilleur temps:</i><b>-</b>
-    </div>
-    <div class="stats" name="worst-time">
-      <i>Pire temps:</i><b>-</b>
-    </div>
-    <div class="stats" name="average-5">
-      <i>Moyenne de 5:</i><b>-</b>
-    </div>
-    <div class="stats" name="average-12">
-      <i>Moyenne de 12:</i><b>-</b>
-    </div>
-    <div class="stats" name="average-25">
-      <i>Moyenne de 25:</i><b>-</b>
-    </div>
-  </div>
-
-
-  <div class="ui__buttons">
-    <button class="btn btn--bl btn--stats">
-      <icon trophy></icon>
-    </button>
-    <button class="btn btn--br btn--prefs">
-      <icon settings></icon>
-    </button>
-    <button class="btn btn--bl btn--back">
-      <icon back></icon>
-    </button>
-    <button class="btn btn--br btn--theme">
-      <icon theme></icon>
-    </button>
-    <button class="btn btn--br btn--reset">
-      <icon reset></icon>
-    </button>
-  </div>
-
-</div>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/95/three.min.js'></script><script  src="../js/rubik.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/95/three.min.js'></script>
+  <script src="../js/rubik.js"></script>
 
 </body>
+
 </html>
