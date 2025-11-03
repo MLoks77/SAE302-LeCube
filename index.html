@@ -10,17 +10,46 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-  <link rel="shortcut icon" href="/images/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="Le Cube" />
-  <link rel="manifest" href="/images/site.webmanifest" />
+  <link rel="manifest" href="images/favicon/site.webmanifest" />
+
   <title>Le cube</title>
 </head>
 
-<body>
-  <header></header>
+<body id="landingpage">
+  <main>
+
+    <div class="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 w-full h-full pointer-events-none">
+      </div>
+      <!-- Mobile: le cube au dessus - Desktop: positionné par dessus -->
+      <h1 class="relative block sm:absolute sm:left-0 sm:top-1/2 sm:-translate-y-1/2 text-white text-[20vw] sm:text-[8vw] md:text-[6vw] lg:text-[5vw] xl:text-[180px] leading-none z-20 font-sans pl-[5vw] sm:pl-[5vw] select-none mb-6 sm:mb-0">
+        <span class="block">Le</span>
+        <span class="block">Cube</span>
+      </h1>
+      <div
+        class="grid grid-cols-3 grid-rows-3 gap-[1.3vw] sm:gap-[1vw] md:gap-[0.8vw]
+                w-[64vw] h-[64vw] max-w-[480px] max-h-[480px] min-w-[270px] min-h-[270px] aspect-square z-10
+                sm:w-[72vw] sm:h-[72vw] sm:max-w-[540px] sm:max-h-[540px] md:w-[60vw] md:h-[60vw] md:max-w-[600px] md:max-h-[600px] 
+                lg:w-[48vw] lg:h-[48vw] lg:max-w-[680px] lg:max-h-[680px] 
+                sm:translate-x-[8vw] md:translate-x-[10vw] lg:translate-x-[14vw]">
+        <div class="border border-white bg-white rounded-tl-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">Interview</div>
+        <div class="border border-white bg-white rounded-t-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">Audios</div>
+        <div class="border border-white bg-white rounded-tr-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">Histoire</div>
+        <div class="border border-white bg-white rounded-l-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">Articles</div>
+        <div class="border border-white bg-white rounded-xl shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all"><!-- Ne rien mettre --></div>
+        <div class="border border-white bg-white rounded-r-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">Galerie</div>
+        <div class="border border-white bg-white rounded-bl-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">Histoire</div>
+        <div class="border border-white bg-white rounded-b-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">Epreuves</div>
+        <div class="border border-white bg-white rounded-br-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">A propos</div>
+      </div>
+    </div>
+      
+  </main>
 </body>
 
 </html>
