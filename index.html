@@ -20,7 +20,7 @@
   <title>Le cube</title>
 </head>
 
-<body id="landingpage">
+<body id="landingpage" class="bg-black">
   <main>
 
     <div class="min-h-screen w-full flex items-center justify-center overflow-hidden bg-transparent">
@@ -28,35 +28,61 @@
                 w-[90vw] h-[90vw] max-w-[480px] max-h-[480px] min-w-[270px] min-h-[270px] aspect-square z-10
                 sm:w-[90vw] sm:h-[90vw] sm:max-w-[540px] sm:max-h-[540px] md:w-[120vw] md:h-[120vw] md:max-w-[600px] md:max-h-[600px] 
                 lg:w-[90vw] lg:h-[90vw] lg:max-w-[680px] lg:max-h-[680px]">
-        <div id="INTERVIEW" label="Interview"
-          class="border border-white bg-white rounded-tl-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">
-          Interview</div>
-        <div id="AUDIO" label="Audio"
-          class="border border-white bg-white rounded-t-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">
-          Audio</div>
-        <div id="HISTOIRE" label="Histoire"
-          class="border border-white bg-white rounded-tr-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">
-          Histoire</div>
-        <div id="ARTICLE" label="Articles"
-          class="border border-white bg-white rounded-l-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">
-          Article</div>
-        <div
-          class="border border-white bg-white rounded-xl shadow aspect-square flex items-center justify-center select-none transition-all">
-          <img src="images/logo_lecube.webp" alt="Logo Le Cube"
-            class="w-2/3 h-2/3 object-contain mx-auto my-auto block pointer-events-none select-none" />
-        </div>
-        <div id="GALERIE" label="Galerie"
-          class="border border-white bg-white rounded-r-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">
-          Galerie</div>
-        <div id="CUBE" label="Le Cube"
-          class="border border-white bg-white rounded-bl-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">
-          Le cube</div>
-        <div id="EPREUVES" label="Epreuves"
-          class="border border-white bg-white rounded-b-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">
-          Epreuves</div>
-        <div id="INFOGRAPHIE" label="Infographie"
-          class="border border-white bg-white rounded-br-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">
-          Infographie</div>
+        <a href="pages/interviews.html" class="cursor-pointer">
+          <div id="INTERVIEW" label="Interview"
+            class="border border-none bg-white rounded-tl-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] hover:text-white hover:shadow hover:text-[2.1vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] font-semibold select-none transition-all duration-300">
+            Interview
+          </div>
+        </a>
+        <a href="pages/audio.html" class="cursor-pointer">
+          <div id="AUDIO" label="Audio"
+            class="border border-none bg-white rounded-t-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] hover:text-white hover:shadow hover:text-[2.1vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] font-semibold select-none transition-all duration-300">
+            Audio
+          </div>
+        </a>
+        <a href="pages/histoire.html" class="cursor-pointer">
+          <div id="HISTOIRE" label="Histoire"
+            class="border border-none bg-white rounded-tr-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] hover:text-white hover:shadow hover:text-[2.1vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] font-semibold select-none transition-all duration-300">
+            Histoire
+          </div>
+        </a>
+        <a href="pages/articles.html" class="cursor-pointer">
+          <div id="ARTICLE" label="Articles"
+            class="border border-none bg-white rounded-l-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] hover:text-white hover:shadow hover:text-[2.1vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] font-semibold select-none transition-all duration-300">
+            Article
+          </div>
+        </a>
+        <a href="pages/Rubik.html" class="cursor-pointer">
+          <div
+            class="border border-none bg-white rounded-xl shadow aspect-square flex items-center justify-center select-none transition-all">
+            <img src="images/logo_lecube.webp" alt="Logo Le Cube"
+              class="w-2/3 h-2/3 object-contain mx-auto my-auto block pointer-events-none select-none" />
+          </div>
+        </a>
+        <a href="pages/galerie.html" class="cursor-pointer">
+          <div id="GALERIE" label="Galerie"
+            class="border border-none bg-white rounded-r-lg shadow aspect-square flex items-center justify-center text-black hover:text-white hover:shadow hover:text-[2.1vw] text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] font-semibold select-none transition-all duration-300">
+            Galerie
+          </div>
+        </a>
+        <a href="pages/epreuves.html" class="cursor-pointer">
+          <div id="CUBE" label="Le Cube"
+            class="border border-none bg-white rounded-bl-lg shadow aspect-square flex items-center justify-center text-black hover:text-white hover:shadow hover:text-[2.1vw] text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] font-semibold select-none transition-all duration-300">
+            Le cube
+          </div>
+        </a>
+        <a href="pages/epreuves.html" class="cursor-pointer">
+          <div id="EPREUVES" label="Epreuves"
+            class="border border-none bg-white rounded-b-lg shadow aspect-square flex items-center justify-center text-black hover:text-white hover:shadow hover:text-[2.1vw] text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] font-semibold select-none transition-all duration-300">
+            Epreuves
+          </div>
+        </a>
+        <a href="pages/Infographie.html" class="cursor-pointer">
+          <div id="INFOGRAPHIE" label="Infographie"
+            class="border border-none bg-white rounded-br-lg shadow aspect-square flex items-center justify-center text-black hover:text-white hover:shadow hover:text-[2.1vw] text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] font-semibold select-none transition-all duration-300">
+            Infographie
+          </div>
+        </a>
       </div>
     </div>
 
@@ -68,12 +94,11 @@
         "HISTOIRE",
         "ARTICLE",
         "GALERIE",
-        "LE CUBE",
+        "CUBE",
         "EPREUVES",
         "INFOGRAPHIE"
       ];
 
-      // Palette Rubik (6 couleurs). On en réutilise 2 pour obtenir 8 cases.
       const rubikPalette = [
         "#E00000", // rouge
         "#FFD500", // jaune
@@ -82,47 +107,79 @@
         "#FF5900", // orange
       ];
 
-      // Attribution d'une couleur par case (robuste, indépendante de la taille du tableau)
       const cubeColorById = {
         INTERVIEW: "#E00000", // rouge
         AUDIO: "#FFD500",     // jaune
         HISTOIRE: "#0045AD",  // bleu
         ARTICLE: "#009B48",   // vert
         GALERIE: "#FF5900",   // orange
-        CUBE: "#FFFFFF",       // blanc
+        CUBE: "#0045AD",      // bleu (non-blanc pour bien voir le changement)
         EPREUVES: "#E00000",   // rouge (réutilisé)
         INFOGRAPHIE: "#009B48"  // vert (réutilisé)
       };
 
+      // Couleur de hover configurable
+      const hoverColor = "#000000";
+
+      // Baseline: toutes les cases en blanc au démarrage
+      cubeOrder.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.backgroundColor = "#FFFFFF";
+      });
+
       // Timeline GSAP qui fait défiler les cases
       // Chaque case prend sa couleur associée puis revient au blanc avant la suivante
-      const tl = gsap.timeline({ repeat: -1, defaults: { ease: "power1.inOut" } });
+      let currentActiveEl = null;
+      const tl = gsap.timeline({ repeat: -1, defaults: { ease: "power4.inOut" } });
+      const setAllTilesWhite = () => {
+        cubeOrder.forEach(id2 => {
+          const el2 = document.getElementById(id2);
+          if (el2) gsap.set(el2, { backgroundColor: "#FFFFFF" });
+        });
+      };
+      tl.eventCallback("onRepeat", setAllTilesWhite);
       cubeOrder.forEach(id => {
         const color = cubeColorById[id];
         const el = document.getElementById(id);
         if (!el || !color) return;
-        tl.to(el, { backgroundColor: color, duration: 0.6 })
-          .to({}, { duration: 0.4 })
+        tl.to(el, { backgroundColor: color, duration: 0.6, onStart() { currentActiveEl = el; } }) // changer la vitesse de vitesse
           .to(el, { backgroundColor: "#FFFFFF", duration: 0.6 });
       });
 
-      // Pause sur hover et forçage de la couleur associée
+      // Pause sur hover et forçage de la couleur associée sans casser la timeline
+      const hoverTweenByEl = new WeakMap();
+      const hoverSnapshot = { time: 0, activeEl: null, activeColor: null };
       cubeOrder.forEach(id => {
         const el = document.getElementById(id);
         if (!el) return;
 
         el.addEventListener("mouseenter", () => {
+          // Snapshot de l'état courant
+          hoverSnapshot.time = tl.time();
+          hoverSnapshot.activeEl = currentActiveEl;
+          hoverSnapshot.activeColor = currentActiveEl ? gsap.getProperty(currentActiveEl, "backgroundColor") : null;
+
           tl.pause();
-          gsap.to(el, { backgroundColor: cubeColorById[id], duration: 0.2, overwrite: true });
+          // Si une autre case était active, on la met en blanc temporairement
+          if (currentActiveEl && currentActiveEl !== el) {
+            gsap.set(currentActiveEl, { backgroundColor: "#FFFFFF" });
+          }
+          const existing = hoverTweenByEl.get(el);
+          if (existing) existing.kill();
+          const t = gsap.to(el, { backgroundColor: (hoverColor ?? cubeColorById[id]), duration: 0.2, overwrite: false });
+          hoverTweenByEl.set(el, t);
         });
 
         el.addEventListener("mouseleave", () => {
-          gsap.to(el, { backgroundColor: "#FFFFFF", duration: 0.2, overwrite: true });
-          tl.play();
+          const existing = hoverTweenByEl.get(el);
+          if (existing) existing.kill();
+          // La case survolée redevient blanche (on nettoie la prop pour ne pas heurter la timeline)
+          gsap.set(el, { clearProps: "backgroundColor" });
+          // Reprise exactement à l'instant du pause, évite les sauts
+          tl.time(hoverSnapshot.time).play();
         });
       });
 
-      // Met en pause la timeline quand l'onglet est inactif
       document.addEventListener("visibilitychange", () => {
         if (document.hidden) {
           tl.pause();
@@ -131,6 +188,8 @@
         }
       });
     </script>
+
+    <script src="js/main.js"></script>
   </main>
 </body>
 

@@ -28,6 +28,20 @@
 
   <!-- FOOTER -->
   <footer class="bg-black pt-3">
+
+    <section class="flex justify-center items-center my-8 text-white mt-3">
+      <div class="flex w-full max-w-xl justify-between items-center">
+        <a href="#" class="flex flex-row items-center transition-transform duration-200 hover:scale-105">
+          <img src="../images/button/bl_full.webp" width="50px" height="50px" alt="Page précédente">
+          <p class="ml-4 text-xl">Page précédente</p>
+        </a>
+        <a href="#" class="flex flex-row items-center transition-transform duration-200 hover:scale-105">
+          <p class="mr-4 text-xl">Page suivante</p>
+          <img src="../images/button/br_full.webp" width="50px" height="50px" alt="Page suivante">
+        </a>
+      </div>
+    </section>
+
     <div class="grid grid-cols-4 grid-rows-1 gap-4">
       <div>
         <h2 class="rubik-mono ml-2 text-[12px] sm:text-[18px] text-white">SPEEDCUBING</h2>
@@ -48,10 +62,13 @@
             <a href="#top" class="decoration-none text-white hover:text-[#E3E3E3]">Articles</a>
           </li>
           <li>
-            <a href="../pages/gallerie.html" class="decoration-none text-white hover:text-[#E00000]">Gallerie</a>
+            <a href="../pages/galerie.html" class="decoration-none text-white hover:text-[#E00000]">galerie</a>
           </li>
           <li>
             <a href="../pages/interviews.html" class="decoration-none text-white hover:text-[#FF5900]">Interviews</a>
+          </li>
+          <li>
+            <a href="../pages/audio.html" class="decoration-none text-white hover:text-[#009B48]">Audio</a>
           </li>
           <li>
             <a href="../pages/epreuves.html" class="decoration-none text-white hover:text-[#FEB21A]">Epreuves</a>
@@ -94,7 +111,8 @@
           Chisiu</a><br>
         <a href="https://www.linkedin.com/in/témi-kergastel-162205260"
           class="decoration-none text-white hover:text-[#E00000]">Témi Kergastel</a><br>
-        <a href="https://www.linkedin.com/in/clément-guesnon-06a77033a" class="decoration-none text-white hover:text-[#009B48]">Clément Guenon</a>
+        <a href="https://www.linkedin.com/in/clément-guesnon-06a77033a"
+          class="decoration-none text-white hover:text-[#009B48]">Clément Guenon</a>
       </div>
     </div>
     <div class="flex items-center justify-center my-6 ml-2">
@@ -102,7 +120,7 @@
       <div class="mx-4 flex-shrink-0 flex items-center justify-center bg-[#000000] rounded-full"
         style="width:64px; height:64px;">
         <a href="../pages/Rubik.html" target="_blank"><img src="../images/logo_lecube_blanc.webp" alt="Logo Rubiko"
-            class="h-12 w-12 object-contain" /></a>
+            class="h-12 w-12 object-contain transition-transform duration-200 hover:scale-105" /></a>
       </div>
       <hr class="flex-grow border-white border-t-2 mr-2" />
     </div>
@@ -110,3 +128,5 @@
 </body>
 
 </html>
+
+<script src="../js/main.js"></script>
