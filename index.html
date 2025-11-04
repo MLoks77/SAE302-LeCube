@@ -23,32 +23,114 @@
 <body id="landingpage">
   <main>
 
-    <div class="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden">
-      <div class="absolute inset-0 w-full h-full pointer-events-none">
-      </div>
-      <!-- Mobile: le cube au dessus - Desktop: positionné par dessus -->
-      <h1 class="relative block sm:absolute sm:left-0 sm:top-1/2 sm:-translate-y-1/2 text-white text-[20vw] sm:text-[8vw] md:text-[6vw] lg:text-[5vw] xl:text-[180px] leading-none z-20 font-sans pl-[5vw] sm:pl-[5vw] select-none mb-6 sm:mb-0">
-        <span class="block">Le</span>
-        <span class="block">Cube</span>
-      </h1>
-      <div
-        class="grid grid-cols-3 grid-rows-3 gap-[1.3vw] sm:gap-[1vw] md:gap-[0.8vw]
-                w-[64vw] h-[64vw] max-w-[480px] max-h-[480px] min-w-[270px] min-h-[270px] aspect-square z-10
-                sm:w-[72vw] sm:h-[72vw] sm:max-w-[540px] sm:max-h-[540px] md:w-[60vw] md:h-[60vw] md:max-w-[600px] md:max-h-[600px] 
-                lg:w-[48vw] lg:h-[48vw] lg:max-w-[680px] lg:max-h-[680px] 
-                sm:translate-x-[8vw] md:translate-x-[10vw] lg:translate-x-[14vw]">
-        <div class="border border-white bg-white rounded-tl-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">Interview</div>
-        <div class="border border-white bg-white rounded-t-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">Audios</div>
-        <div class="border border-white bg-white rounded-tr-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">Histoire</div>
-        <div class="border border-white bg-white rounded-l-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">Articles</div>
-        <div class="border border-white bg-white rounded-xl shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all"><!-- Ne rien mettre --></div>
-        <div class="border border-white bg-white rounded-r-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">Galerie</div>
-        <div class="border border-white bg-white rounded-bl-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">Histoire</div>
-        <div class="border border-white bg-white rounded-b-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">Epreuves</div>
-        <div class="border border-white bg-white rounded-br-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">A propos</div>
+    <div class="min-h-screen w-full flex items-center justify-center overflow-hidden bg-transparent">
+      <div class="grid grid-cols-3 grid-rows-3 gap-[1.3vw] sm:gap-[1vw] md:gap-[0.8vw]
+                w-[90vw] h-[90vw] max-w-[480px] max-h-[480px] min-w-[270px] min-h-[270px] aspect-square z-10
+                sm:w-[90vw] sm:h-[90vw] sm:max-w-[540px] sm:max-h-[540px] md:w-[120vw] md:h-[120vw] md:max-w-[600px] md:max-h-[600px] 
+                lg:w-[90vw] lg:h-[90vw] lg:max-w-[680px] lg:max-h-[680px]">
+        <div id="INTERVIEW" label="Interview"
+          class="border border-white bg-white rounded-tl-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">
+          Interview</div>
+        <div id="AUDIO" label="Audio"
+          class="border border-white bg-white rounded-t-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">
+          Audio</div>
+        <div id="HISTOIRE" label="Histoire"
+          class="border border-white bg-white rounded-tr-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">
+          Histoire</div>
+        <div id="ARTICLE" label="Articles"
+          class="border border-white bg-white rounded-l-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">
+          Article</div>
+        <div
+          class="border border-white bg-white rounded-xl shadow aspect-square flex items-center justify-center select-none transition-all">
+          <img src="images/logo_lecube.webp" alt="Logo Le Cube"
+            class="w-2/3 h-2/3 object-contain mx-auto my-auto block pointer-events-none select-none" />
+        </div>
+        <div id="GALERIE" label="Galerie"
+          class="border border-white bg-white rounded-r-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">
+          Galerie</div>
+        <div id="CUBE" label="Le Cube"
+          class="border border-white bg-white rounded-bl-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">
+          Le cube</div>
+        <div id="EPREUVES" label="Epreuves"
+          class="border border-white bg-white rounded-b-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">
+          Epreuves</div>
+        <div id="INFOGRAPHIE" label="Infographie"
+          class="border border-white bg-white rounded-br-lg shadow aspect-square flex items-center justify-center text-black text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl font-semibold select-none transition-all">
+          Infographie</div>
       </div>
     </div>
-      
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script>
+      const cubeOrder = [
+        "INTERVIEW",
+        "AUDIO",
+        "HISTOIRE",
+        "ARTICLE",
+        "GALERIE",
+        "LE CUBE",
+        "EPREUVES",
+        "INFOGRAPHIE"
+      ];
+
+      // Palette Rubik (6 couleurs). On en réutilise 2 pour obtenir 8 cases.
+      const rubikPalette = [
+        "#E00000", // rouge
+        "#FFD500", // jaune
+        "#0045AD", // bleu
+        "#009B48", // vert
+        "#FF5900", // orange
+      ];
+
+      // Attribution d'une couleur par case (robuste, indépendante de la taille du tableau)
+      const cubeColorById = {
+        INTERVIEW: "#E00000", // rouge
+        AUDIO: "#FFD500",     // jaune
+        HISTOIRE: "#0045AD",  // bleu
+        ARTICLE: "#009B48",   // vert
+        GALERIE: "#FF5900",   // orange
+        CUBE: "#FFFFFF",       // blanc
+        EPREUVES: "#E00000",   // rouge (réutilisé)
+        INFOGRAPHIE: "#009B48"  // vert (réutilisé)
+      };
+
+      // Timeline GSAP qui fait défiler les cases
+      // Chaque case prend sa couleur associée puis revient au blanc avant la suivante
+      const tl = gsap.timeline({ repeat: -1, defaults: { ease: "power1.inOut" } });
+      cubeOrder.forEach(id => {
+        const color = cubeColorById[id];
+        const el = document.getElementById(id);
+        if (!el || !color) return;
+        tl.to(el, { backgroundColor: color, duration: 0.6 })
+          .to({}, { duration: 0.4 })
+          .to(el, { backgroundColor: "#FFFFFF", duration: 0.6 });
+      });
+
+      // Pause sur hover et forçage de la couleur associée
+      cubeOrder.forEach(id => {
+        const el = document.getElementById(id);
+        if (!el) return;
+
+        el.addEventListener("mouseenter", () => {
+          tl.pause();
+          gsap.to(el, { backgroundColor: cubeColorById[id], duration: 0.2, overwrite: true });
+        });
+
+        el.addEventListener("mouseleave", () => {
+          gsap.to(el, { backgroundColor: "#FFFFFF", duration: 0.2, overwrite: true });
+          tl.play();
+        });
+      });
+
+      // Met en pause la timeline quand l'onglet est inactif
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          tl.pause();
+        } else {
+          tl.play();
+        }
+      });
+    </script>
   </main>
 </body>
 
