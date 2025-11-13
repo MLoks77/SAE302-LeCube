@@ -22,18 +22,28 @@
 
 <body>
 
+  <div class="w-full flex flex-row">
+    <span class="flex-1 py-3 bg-[#0000FF] border-none text-center"></span>
+    <span class="flex-1 py-3 bg-[#008000] border-none text-center"></span>
+    <span class="flex-1 py-3 bg-[#FF0000] border-none text-center"></span>
+    <span class="flex-1 py-3 bg-[#FFA500] border-none text-center"></span>
+    <span class="flex-1 py-3 bg-[#FFFF00] border-none text-center"></span>
+  </div>
 
 
 
-    <!-- landing  -->
-    <div class="flex items-center justify-center h-screen">
-      <img src="../images/placeholder.png" class="w-full h-full object-cover">
-      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-        <h1 class="text-4xl font-bold">Histoire</h1>
-      </div>
+
+  <!-- landing  -->
+  <div class="flex items-center justify-center h-screen">
+    <video autoplay muted loop class="right-0 bottom-0 min-w-full min-h-full object-cover z-0">
+      <source src="../images/videos/placeholdervideo.mp4" type="video/mp4">
+    </video>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+      <h1 class="text-4xl font-bold">Histoire</h1>
     </div>
-  
-    <br><br><br><br><br><br><br><br><br>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br>
 
   <!-- Grid Tailwind -->
   <div class="grid grid-cols-5 grid-rows-5 gap-2">
@@ -53,11 +63,13 @@
 
     <section class="flex justify-center items-center my-8 text-white mt-3">
       <div class="flex w-full max-w-xl justify-between items-center">
-        <a href="/pages/audio.html" class="flex flex-row items-center transition-transform duration-200 hover:scale-105">
+        <a href="/pages/audio.html"
+          class="flex flex-row items-center transition-transform duration-200 hover:scale-105">
           <img src="../images/button/bl_full.webp" width="50px" height="50px" alt="Page précédente">
           <p class="ml-4 text-xl">Page précédente</p>
         </a>
-        <a href="/pages/articles.html" class="flex flex-row items-center transition-transform duration-200 hover:scale-105">
+        <a href="/pages/articles.html"
+          class="flex flex-row items-center transition-transform duration-200 hover:scale-105">
           <p class="mr-4 text-xl">Page suivante</p>
           <img src="../images/button/br_full.webp" width="50px" height="50px" alt="Page suivante">
         </a>
@@ -134,7 +146,8 @@
           Chisiu</a><br>
         <a href="https://www.linkedin.com/in/témi-kergastel-162205260"
           class="decoration-none text-white hover:text-[#E00000]">Témi Kergastel</a><br>
-        <a href="https://www.linkedin.com/in/clément-guesnon-06a77033a" class="decoration-none text-white hover:text-[#009B48]">Clément Guenon</a>
+        <a href="https://www.linkedin.com/in/clément-guesnon-06a77033a"
+          class="decoration-none text-white hover:text-[#009B48]">Clément Guenon</a>
       </div>
     </div>
     <div class="flex items-center justify-center  ml-2">
