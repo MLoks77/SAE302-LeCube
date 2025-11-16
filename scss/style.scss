@@ -1,37 +1,39 @@
-
 // Fonts
 
-// font Rubik Rubik Mono One, que j'utilise dans le footer
+
 .rubik-mono {
-    font-family: "Rubik Mono One", monospace;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 #landingpage {
   position: relative;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
 }
+
 #landingpage::before {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  //background-image: url('../images/landingpage.jpg');
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(100%);
   z-index: 0;
 }
-#landingpage > * {
+
+#landingpage>* {
   position: relative;
   z-index: 1;
-} 
+}
 
-// video fond d'écran accueil
 #videofond {
   position: fixed;
   right: 0;
