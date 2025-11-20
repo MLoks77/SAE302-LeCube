@@ -49,7 +49,7 @@
       <source src="../images/videos/accueil_cut.mp4" type="video/mp4">
     </video>
     <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-      <h1 class="text-[50px] md:text-[100px] lg:text-[150px] font-bold rubik-mono">Epreuves</h1>
+      <h1 id="titreanimgsap" class="text-[50px] md:text-[100px] lg:text-[150px] font-bold rubik-mono">Epreuves</h1>
     </div>
   </div>
 
@@ -189,7 +189,7 @@
             <div class="ml-3">
               <h2 class="text-xl font-bold rubik-mono">Méthodes de résolution variées</h2>
               <p class="text-base Montserrat">
-                Le 3x3 peut être résolu grâce à différentes méthodes reconnues, comme CFOP, Roux ou ZZ. Chacune possède
+                Le 3x3 peut être résolu grâce à différentes méthodes reconnues, comme <a class="underline" href="https://www.speedcubingtips.eu/methode-cfop" target="_blank">CFOP</a>, <a class="underline" href="https://www.speedcubingtips.eu/methode-de-resolution-roux" target="_blank">Roux</a> ou <a class="underline" href="https://www.speedcubingtips.eu/methode-zz" target="_blank">ZZ</a>. Chacune possède
                 ses propres techniques, algorithmes et stratégies pour optimiser les mouvements et gagner en rapidité.
                 Le
                 choix de la méthode dépend du style du cuber et de ses objectifs, mais toutes exigent de la pratique, de
@@ -572,4 +572,18 @@
     });
   });
 
+</script>
+
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://assets.codepen.io/16327/ScrambleTextPlugin3.min.js"></script>
+
+<script>
+window.onload = function() {
+gsap.to("#titreanimgsap", 3, {
+  scrambleText: {
+    text: "Epreuves",
+    rightToLeft: true,
+  }
+});
+}
 </script>
