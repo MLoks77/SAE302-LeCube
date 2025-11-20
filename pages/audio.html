@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="../images/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="../images/favicon/favicon.svg" />
@@ -69,7 +69,9 @@
     <section class="bg-black w-full px-6 sm:px-8 py-8 sm:py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-1 items-start">
             <div id="audio" class="w-full flex justify-center items-center">
-                <div id="carbon" class="w-full shadow-2xl shadow-blue-400/60 max-w-xs sm:max-w-none sm:w-80 bg-white p-4 sm:p-8 rounded-lg mx-auto flex flex-col items-center">
+
+                <div id="carbon"
+                    class="w-full shadow-2xl shadow-blue-400/60 max-w-xs sm:max-w-none sm:w-80 bg-white p-4 sm:p-8 rounded-lg mx-auto flex flex-col items-center">
                     <!-- Album Cover -->
                     <img src="../images/videos/cube.gif" alt="Chevry Miel 2025"
                         class="w-40 h-40 sm:w-64 sm:h-64 mx-auto rounded-lg mb-4  object-cover">
@@ -81,7 +83,8 @@
                     <audio id="audioElement" src="../images/son/1-30. It’s Going Down Now.mp3"></audio>
                     <!-- Music Controls -->
                     <div class="mt-4 sm:mt-6 flex justify-center items-center">
-                        <button id="prevBtn" class="p-2 sm:p-3 rounded-full bg-gray-200 hover:bg-gray-300 focus:outline-none"
+                        <button id="prevBtn"
+                            class="p-2 sm:p-3 rounded-full bg-gray-200 hover:bg-gray-300 focus:outline-none"
                             title="Reculer 10s">
                             <svg width="28" height="28" viewBox="0 0 24 24" class="w-5 h-5 text-gray-600" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -101,7 +104,8 @@
                                 <rect x="14" y="4" width="4" height="16" fill="#000"></rect>
                             </svg>
                         </button>
-                        <button id="nextBtn" class="p-2 sm:p-3 rounded-full bg-gray-200 hover:bg-gray-300 focus:outline-none"
+                        <button id="nextBtn"
+                            class="p-2 sm:p-3 rounded-full bg-gray-200 hover:bg-gray-300 focus:outline-none"
                             title="Avancer 10s">
                             <svg width="28" height="28" viewBox="0 0 24 24" class="w-5 h-5 text-gray-600" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -126,13 +130,15 @@
 
             <div id="text" class="w-full md:ml-0 md:mr-8 flex-1 text-left mt-8 md:mt-15 ">
                 <h1
-                    class="border-l-2 border-white pl-3 sm:pl-5 rubik-mono text-xl sm:text-2xl md:text-3xl font-bold text-white text-[#212121] mb-2 sm:mb-3">
+                    class="border-l-2 border-white pl-3 sm:pl-5 rubik-mono text-xl sm:text-2xl md:text-3xl font-bold text-white text-[#212121] mb-2 sm:mb-3 ">
                     L'ambiance d'une compétition</h1>
-                <p class="text-base sm:text-lg md:text-xl leading-relaxed text-white">
-                    La compétition de Chevry Miel en speedcubing était débordante de passion et de compétition. <br><br> Dès l'entrée
+                <p class="Montserrat text-base sm:text-lg md:text-xl leading-relaxed text-white">
+                    La compétition de Chevry Miel en speedcubing était débordante de passion et de compétition. <br><br>
+                    Dès l'entrée
                     dans la salle, on ressent
                     l'excitation ainsi que la tension d'une compétition qui flotte dans l'air, rythmée par le cliquetis
-                    frénétique des cubes et des discussions entre compétiteurs. <br><br>Dans cet audio on vous enmène avec nous à
+                    frénétique des cubes et des discussions entre compétiteurs. <br><br>Dans cet audio on vous enmène
+                    avec nous à
                     travers cette compétition.
                 </p>
             </div>
@@ -147,11 +153,11 @@
                 <a href="../pages/interviews.html"
                     class="flex flex-row items-center transition-transform duration-200 hover:scale-105">
                     <img src="../images/button/bl_full.webp" width="50px" height="50px" alt="Page précédente">
-                    <p class="ml-4 text-xl">Page précédente</p>
+                    <p class="ml-4 text-xl Montserrat">Page précédente</p>
                 </a>
                 <a href="../pages/histoire.html"
                     class="flex flex-row items-center transition-transform duration-200 hover:scale-105">
-                    <p class="mr-4 text-xl">Page suivante</p>
+                    <p class="mr-4 text-xl Montserrat">Page suivante</p>
                     <img src="../images/button/br_full.webp" width="50px" height="50px" alt="Page suivante">
                 </a>
             </div>
@@ -160,7 +166,7 @@
         <div class="grid grid-cols-4 grid-rows-1 gap-4">
             <div>
                 <h2 class="rubik-mono ml-2 text-[12px] sm:text-[18px] text-white">SPEEDCUBING</h2>
-                <p class="mr-3 text-white text-left text-[12px] sm:text-[16px] ml-2">
+                <p class="mr-3 text-white text-left text-[12px] sm:text-[16px] ml-2 Montserrat">
                     Le speedcubing est une discipline sportive qui consiste à résoudre un Rubik's Cube ou tout autre
                     puzzle 3D le
                     plus rapidement possible.</p>
@@ -169,34 +175,34 @@
                 <h2 class="rubik-mono text-[12px] sm:text-[18px] text-white">NOS PAGES</h2>
                 <ul class="list-none text-left">
                     <li>
-                        <a href="../index.html" class="decoration-none text-white hover:text-[#0045AD]">Accueil</a>
+                        <a href="../index.html" class="decoration-none text-white hover:text-[#0045AD] Montserrat">Accueil</a>
                     </li>
                     <li>
                         <a href="../pages/histoire.html"
-                            class="decoration-none text-white hover:text-[#E3E3E3]">Histoire</a>
+                            class="decoration-none text-white hover:text-[#E3E3E3] Montserrat">Histoire</a>
                     </li>
                     <li>
                         <a href="../pages/articles.html"
-                            class="decoration-none text-white hover:text-[#009B48]">Articles</a>
+                            class="decoration-none text-white hover:text-[#009B48] Montserrat">Articles</a>
                     </li>
                     <li>
                         <a href="../pages/galerie.html"
-                            class="decoration-none text-white hover:text-[#E00000]">galerie</a>
+                            class="decoration-none text-white hover:text-[#E00000] Montserrat">galerie</a>
                     </li>
                     <li>
                         <a href="../pages/interviews.html"
-                            class="decoration-none text-white hover:text-[#FF5900]">Interviews</a>
+                            class="decoration-none text-white hover:text-[#FF5900] Montserrat">Interviews</a>
                     </li>
                     <li>
-                        <a href="#top" class="decoration-none text-white hover:text-[#009B48]">Audio</a>
+                        <a href="#top" class="decoration-none text-white hover:text-[#009B48] Montserrat">Audio</a>
                     </li>
                     <li>
                         <a href="../pages/epreuves.html"
-                            class="decoration-none text-white hover:text-[#FEB21A]">Epreuves</a>
+                            class="decoration-none text-white hover:text-[#FEB21A] Montserrat">Epreuves</a>
                     </li>
                     <li>
                         <a href="../pages/Infographie.html"
-                            class="decoration-none text-white hover:text-[#009B48]">Infographie</a>
+                            class="decoration-none text-white hover:text-[#009B48] Montserrat">Infographie</a>
                     </li>
                 </ul>
             </div>
@@ -205,22 +211,22 @@
                 <ul class="list-none text-left">
                     <li>
                         <a href="https://developer.mozilla.org/fr/docs/Web/HTML"
-                            class="decoration-none text-white hover:text-[#009B48]" target="_blank">HTML</a>
+                            class="decoration-none text-white hover:text-[#009B48] Montserrat" target="_blank">HTML</a>
                     </li>
                     <li>
                         <a href="https://developer.mozilla.org/fr/docs/Web/CSS"
-                            class="decoration-none text-white hover:text-[#E00000]" target="_blank">CSS</a>
+                            class="decoration-none text-white hover:text-[#E00000] Montserrat" target="_blank">CSS</a>
                     </li>
                     <li>
-                        <a href="https://tailwindcss.com/" class="decoration-none text-white hover:text-[#FF5900]"
+                        <a href="https://tailwindcss.com/" class="decoration-none text-white hover:text-[#FF5900] Montserrat"
                             target="_blank">Tailwind CSS</a>
                     </li>
                     <li>
                         <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript"
-                            class="decoration-none text-white hover:text-[#FFD500]" target="_blank">JavaScript</a>
+                            class="decoration-none text-white hover:text-[#FFD500] Montserrat" target="_blank">JavaScript</a>
                     </li>
                     <li>
-                        <a href="https://gsap.com/" class="decoration-none text-white hover:text-[#0045AD]"
+                        <a href="https://gsap.com/" class="decoration-none text-white hover:text-[#0045AD] Montserrat"
                             target="_blank">GSAP</a>
                     </li>
                 </ul>
@@ -228,14 +234,14 @@
             <div>
                 <h2 class="rubik-mono mr-2 text-[12px] sm:text-[18px] text-white">Réalisé par</h2>
                 <a href="https://www.linkedin.com/in/maxime-derènes-9b997932a"
-                    class="decoration-none text-white hover:text-[#FEB21A]">Maxime Derènes</a><br>
+                    class="decoration-none text-white hover:text-[#FEB21A] Montserrat">Maxime Derènes</a><br>
                 <a href="https://www.linkedin.com/in/sebastian-chisiu-a115bb338"
-                    class="decoration-none text-white hover:text-[#FF5900]">Sébastien
+                    class="decoration-none text-white hover:text-[#FF5900] Montserrat">Sébastien
                     Chisiu</a><br>
                 <a href="https://www.linkedin.com/in/témi-kergastel-162205260"
-                    class="decoration-none text-white hover:text-[#E00000]">Témi Kergastel</a><br>
+                    class="decoration-none text-white hover:text-[#E00000] Montserrat">Témi Kergastel</a><br>
                 <a href="https://www.linkedin.com/in/clément-guesnon-06a77033a"
-                    class="decoration-none text-white hover:text-[#009B48]">Clément Guenon</a>
+                    class="decoration-none text-white hover:text-[#009B48] Montserrat">Clément Guenon</a>
             </div>
         </div>
         <div class="flex items-center justify-center  ml-2">
