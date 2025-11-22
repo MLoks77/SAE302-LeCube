@@ -5,7 +5,7 @@ Site réalisé en :
 - HTML+SCSS
 - TAILWIND
 - JAVASCRIPT
-- three js mini
+- GSAP
 
 Liens utiles :
 https://github.com/MLoks77/SAE302
