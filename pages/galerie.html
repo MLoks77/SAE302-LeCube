@@ -24,12 +24,17 @@
 
 <body>
 
-  <div class="w-full flex flex-row">
-    <span class="flex-1 py-3 bg-[#0000FF] border-none text-center"></span>
-    <span class="flex-1 py-3 bg-[#008000] border-none text-center"></span>
-    <span class="flex-1 py-3 bg-[#FF0000] border-none text-center"></span>
-    <span class="flex-1 py-3 bg-[#FFA500] border-none text-center"></span>
-    <span class="flex-1 py-3 bg-[#FFFF00] border-none text-center"></span>
+  
+  <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
+    <div class="flex w-full h-full">
+      <div class="flex flex-row w-full h-full">
+        <div class="flex-1 h-full" style="background-color: #0000FF;"></div>
+        <div class="flex-1 h-full" style="background-color: #008000;"></div>
+        <div class="flex-1 h-full" style="background-color: #FF0000;"></div>
+        <div class="flex-1 h-full" style="background-color: #FFA500;"></div>
+        <div class="flex-1 h-full" style="background-color: #FFFF00;"></div>
+      </div>
+    </div>
   </div>
 
   <a href="../index.html" class="flex flex-row items-center space-x-2 no-underline">
@@ -40,7 +45,7 @@
         stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
       </svg>
-      <span class="rubik-mono text-white rubik-mono font-bold text-[18px]">Accueil</span>
+      <span class="rubik-mono text-white font-bold text-[18px]">Accueil</span>
 
     </div>
   </a>
@@ -55,21 +60,8 @@
     </div>
   </div>
 
-  <!-- Ligne de séparation décorative entre les deux parties -->
-  <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
-    <div class="flex w-full h-full">
-      <div class="flex flex-row w-full h-full">
-        <div class="flex-1 h-full" style="background-color: #0000FF;"></div>
-        <div class="flex-1 h-full" style="background-color: #008000;"></div>
-        <div class="flex-1 h-full" style="background-color: #FF0000;"></div>
-        <div class="flex-1 h-full" style="background-color: #FFA500;"></div>
-        <div class="flex-1 h-full" style="background-color: #FFFF00;"></div>
-      </div>
-    </div>
-  </div>
-
   <!-- première gallerie -->
-  <div class="w-full py-16 bg-[#F3F3F3]" id="gallerie1">
+  <div class="w-full py-22  bg-[#F3F3F3]" id="gallerie1">
     <div class="max-w-6xl mx-auto px-4 md:px-0">
 
       <div class="flex items-center mb-12">

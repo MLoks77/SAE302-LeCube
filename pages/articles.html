@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/output.css">
+  <link href="../css/output.css" rel="stylesheet">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -24,53 +25,45 @@
 
 <body>
 
-  <div class="w-full flex flex-row">
-    <span class="flex-1 py-3 bg-[#0000FF] border-none text-center"></span>
-    <span class="flex-1 py-3 bg-[#008000] border-none text-center"></span>
-    <span class="flex-1 py-3 bg-[#FF0000] border-none text-center"></span>
-    <span class="flex-1 py-3 bg-[#FFA500] border-none text-center"></span>
-    <span class="flex-1 py-3 bg-[#FFFF00] border-none text-center"></span>
-  </div>
 
-  <a href="../index.html" class="flex flex-row items-center space-x-2 no-underline">
-    <div
-      class="fixed top-4 left-4 z-50 flex flex-row items-center bg-black backdrop-blur-sm shadow-lg px-4 py-2 hover:scale-105 transition-all">
-
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="white"
-        stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-      </svg>
-      <span class="rubik-mono text-white rubik-mono font-bold text-[18px]">Accueil</span>
-
+  <div>
+    <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
+      <div class="flex w-full h-full">
+        <div class="flex flex-row w-full h-full">
+          <div class="flex-1 h-full" style="background-color: #0000FF;"></div>
+          <div class="flex-1 h-full" style="background-color: #008000;"></div>
+          <div class="flex-1 h-full" style="background-color: #FF0000;"></div>
+          <div class="flex-1 h-full" style="background-color: #FFA500;"></div>
+          <div class="flex-1 h-full" style="background-color: #FFFF00;"></div>
+        </div>
+      </div>
     </div>
-  </a>
 
-  <!-- landing  -->
-  <div class="flex items-center justify-center h-screen">
-    <video autoplay muted loop class="right-0 bottom-0 min-w-full min-h-full object-cover z-0">
-      <source src="../images/videos/accueil_cut.mp4" type="video/mp4">
-    </video>
-    <div class="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-      <h1 id="titreanimgsap" class="rubik-mono font-bold text-[50px] md:text-[100px] lg:text-[150px]">Articles</h1>
-    </div>
-  </div>
+    <a href="../index.html" class="flex flex-row items-center space-x-2 no-underline">
+      <div
+        class="fixed top-4 left-4 z-50 flex flex-row items-center bg-black backdrop-blur-sm shadow-lg px-4 py-2 hover:scale-105 transition-all">
 
-  <!-- Ligne de séparation décorative entre les deux parties -->
-  <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
-    <div class="flex w-full h-full">
-      <div class="flex flex-row w-full h-full">
-        <div class="flex-1 h-full" style="background-color: #0000FF;"></div>
-        <div class="flex-1 h-full" style="background-color: #008000;"></div>
-        <div class="flex-1 h-full" style="background-color: #FF0000;"></div>
-        <div class="flex-1 h-full" style="background-color: #FFA500;"></div>
-        <div class="flex-1 h-full" style="background-color: #FFFF00;"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="white"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="rubik-mono text-white  font-bold text-[18px]">Accueil</span>
+
+      </div>
+    </a>
+
+    <!-- landing  -->
+    <div class="flex items-center justify-center h-screen">
+      <video autoplay muted loop class="right-0 bottom-0 min-w-full min-h-full object-cover z-0">
+        <source src="../images/videos/accueil_cut.mp4" type="video/mp4">
+      </video>
+      <div class="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+        <h1 id="titreanimgsap" class="rubik-mono font-bold text-[50px] md:text-[100px] lg:text-[150px]">Articles</h1>
       </div>
     </div>
   </div>
+  <!--début page-->
 
-
-
-  <!-- article maxime derènes -->
   <div class="bg-[#FFE646] px-0 py-0 ">
     <div class="flex flex-col md:grid md:grid-cols-5 md:grid-rows-9 gap-4 ">
       <div
@@ -154,7 +147,7 @@
   </div>
   <!-- article maxime derènes fin -->
 
-  <!-- Ligne de séparation décorative entre les deux parties -->
+  
   <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
     <div class="flex w-full h-full">
       <div class="flex flex-row w-full h-full">
@@ -232,7 +225,7 @@
     </div>
   </div>
   <!-- article fin -->
-  <!-- Ligne de séparation décorative entre les deux parties -->
+  
   <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
     <div class="flex w-full h-full">
       <div class="flex flex-row w-full h-full">
@@ -309,7 +302,7 @@
     </div>
   </div>
   <!-- article  fin -->
-  <!-- Ligne de séparation décorative entre les deux parties -->
+  
   <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
     <div class="flex w-full h-full">
       <div class="flex flex-row w-full h-full">

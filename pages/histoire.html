@@ -22,12 +22,17 @@
 
 <body>
 
-  <div class="w-full flex flex-row">
-    <span class="flex-1 py-3 bg-[#0000FF] border-none text-center"></span>
-    <span class="flex-1 py-3 bg-[#008000] border-none text-center"></span>
-    <span class="flex-1 py-3 bg-[#FF0000] border-none text-center"></span>
-    <span class="flex-1 py-3 bg-[#FFA500] border-none text-center"></span>
-    <span class="flex-1 py-3 bg-[#FFFF00] border-none text-center"></span>
+  
+  <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
+    <div class="flex w-full h-full">
+      <div class="flex flex-row w-full h-full">
+        <div class="flex-1 h-full" style="background-color: #0000FF;"></div>
+        <div class="flex-1 h-full" style="background-color: #008000;"></div>
+        <div class="flex-1 h-full" style="background-color: #FF0000;"></div>
+        <div class="flex-1 h-full" style="background-color: #FFA500;"></div>
+        <div class="flex-1 h-full" style="background-color: #FFFF00;"></div>
+      </div>
+    </div>
   </div>
 
   <a href="../index.html" class="flex flex-row items-center space-x-2 no-underline">
@@ -38,7 +43,7 @@
         stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
       </svg>
-      <span class="rubik-mono text-white rubik-mono font-bold text-[18px]">Accueil</span>
+      <span class="rubik-mono text-white font-bold text-[18px]">Accueil</span>
 
     </div>
   </a>
@@ -56,22 +61,12 @@
     </div>
   </div>
 
-    <!-- Ligne de séparation décorative entre les deux parties -->
-    <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
-      <div class="flex w-full h-full">
-        <div class="flex flex-row w-full h-full">
-          <div class="flex-1 h-full" style="background-color: #0000FF;"></div>
-          <div class="flex-1 h-full" style="background-color: #008000;"></div>
-          <div class="flex-1 h-full" style="background-color: #FF0000;"></div>
-          <div class="flex-1 h-full" style="background-color: #FFA500;"></div>
-          <div class="flex-1 h-full" style="background-color: #FFFF00;"></div>
-        </div>
-      </div>
-    </div>
+    
 
 
+<section>
   <div class="w-full">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-12 bg-[#2D8FFF] w-full">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-20 bg-[#2D8FFF] w-full">
       <div class="order-1 px-4 md:px-16">
         <h2 class="border-l-2 border-white pl-5 text-3xl rubik-mono font-bold mb-4 text-white">Naissance du Rubik's Cube</h2>
         <p class="text-lg text-white Montserrat">
@@ -83,7 +78,7 @@
       </div>
       <div class="order-2 flex justify-center px-4 md:px-16">
         <img src="../images/imghistoire/ernorubik.webp" alt="erno rubik"
-          class="w-full h-auto max-h-120 rounded-xl shadow-lg object-cover" />
+          class="w-full h-auto max-h-140 rounded-xl shadow-lg object-cover" />
       </div>
     </div>
   </div>
@@ -181,7 +176,7 @@
       </div>
     </div>
   </div>
-
+</section>
 
   <footer class="bg-black pt-3">
 

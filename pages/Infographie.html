@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="../css/output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap"
+    rel="stylesheet">
 
   <link rel="icon" type="image/png" href="../images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="../images/favicon/favicon.svg" />
@@ -22,12 +24,17 @@
 
 <body>
 
-  <div class="w-full flex flex-row">
-    <span class="flex-1 py-3 bg-[#0000FF] border-none text-center"></span>
-    <span class="flex-1 py-3 bg-[#008000] border-none text-center"></span>
-    <span class="flex-1 py-3 bg-[#FF0000] border-none text-center"></span>
-    <span class="flex-1 py-3 bg-[#FFA500] border-none text-center"></span>
-    <span class="flex-1 py-3 bg-[#FFFF00] border-none text-center"></span>
+
+  <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
+    <div class="flex w-full h-full">
+      <div class="flex flex-row w-full h-full">
+        <div class="flex-1 h-full" style="background-color: #0000FF;"></div>
+        <div class="flex-1 h-full" style="background-color: #008000;"></div>
+        <div class="flex-1 h-full" style="background-color: #FF0000;"></div>
+        <div class="flex-1 h-full" style="background-color: #FFA500;"></div>
+        <div class="flex-1 h-full" style="background-color: #FFFF00;"></div>
+      </div>
+    </div>
   </div>
 
   <a href="../index.html" class="flex flex-row items-center space-x-2 no-underline">
@@ -38,7 +45,7 @@
         stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
       </svg>
-      <span class="rubik-mono text-white rubik-mono font-bold text-[18px]">Accueil</span>
+      <span class="rubik-mono text-white font-bold text-[18px]">Accueil</span>
 
     </div>
   </a>
@@ -53,20 +60,10 @@
     </div>
   </div>
 
-    <!-- Ligne de séparation décorative entre les deux parties -->
-    <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
-      <div class="flex w-full h-full">
-        <div class="flex flex-row w-full h-full">
-          <div class="flex-1 h-full" style="background-color: #0000FF;"></div>
-          <div class="flex-1 h-full" style="background-color: #008000;"></div>
-          <div class="flex-1 h-full" style="background-color: #FF0000;"></div>
-          <div class="flex-1 h-full" style="background-color: #FFA500;"></div>
-          <div class="flex-1 h-full" style="background-color: #FFFF00;"></div>
-        </div>
-      </div>
-    </div>
 
-    <div class="w-full">
+  <!-- version plus grande, a voir on préfère lequel -->
+
+  <!-- <div class="w-full"> 
       <img src="../images/infographie/info0.webp" alt="Bannière des épreuves" class="w-full h-auto object-cover block mx-auto" />
     </div>
     <div class="w-full">
@@ -77,9 +74,19 @@
     </div>
     <div class="w-full">
       <img src="../images/infographie/info3.webp" alt="Bannière des épreuves" class="w-full h-auto object-cover block mx-auto" />
+    </div> -->
+  <section class="bg-black">
+    <div class="w-full flex flex-col items-center gap-0 py-12">
+      <img src="../images/infographie/info0.webp" alt="Bannière des épreuves"
+        class="w-full max-w-6xl h-auto object-cover block mx-auto rounded-t-2xl" />
+      <img src="../images/infographie/info1.webp" alt="Bannière des épreuves"
+        class="w-full max-w-6xl h-auto object-cover block mx-auto" />
+      <img src="../images/infographie/info2.webp" alt="Bannière des épreuves"
+        class="w-full max-w-6xl h-auto object-cover block mx-auto" />
+      <img src="../images/infographie/info3.webp" alt="Bannière des épreuves"
+        class="w-full max-w-6xl h-auto object-cover block mx-auto rounded-b-2xl" />
     </div>
-
-
+  </section>
 
   <!-- FOOTER -->
   <footer class="bg-black pt-3">
@@ -113,28 +120,34 @@
             <a href="../index.html" class="decoration-none text-white hover:text-[#0045AD] Montserrat">Accueil</a>
           </li>
           <li>
-            <a href="../pages/histoire.html" class="decoration-none text-white hover:text-[#E3E3E3] Montserrat">Histoire</a>
+            <a href="../pages/histoire.html"
+              class="decoration-none text-white hover:text-[#E3E3E3] Montserrat">Histoire</a>
           </li>
           <li>
-            <a href="../pages/articles.html" class="decoration-none text-white hover:text-[#009B48] Montserrat">Articles</a>
+            <a href="../pages/articles.html"
+              class="decoration-none text-white hover:text-[#009B48] Montserrat">Articles</a>
           </li>
           <li>
-            <a href="../pages/galerie.html" class="decoration-none text-white hover:text-[#E00000] Montserrat">galerie</a>
+            <a href="../pages/galerie.html"
+              class="decoration-none text-white hover:text-[#E00000] Montserrat">galerie</a>
           </li>
           <li>
-            <a href="../pages/interviews.html" class="decoration-none text-white hover:text-[#FF5900] Montserrat">Interviews</a>
+            <a href="../pages/interviews.html"
+              class="decoration-none text-white hover:text-[#FF5900] Montserrat">Interviews</a>
           </li>
           <li>
             <a href="../pages/audio.html" class="decoration-none text-white hover:text-[#009B48] Montserrat">Audio</a>
           </li>
           <li>
-            <a href="../pages/epreuves.html" class="decoration-none text-white hover:text-[#FEB21A] Montserrat">Epreuves</a>
+            <a href="../pages/epreuves.html"
+              class="decoration-none text-white hover:text-[#FEB21A] Montserrat">Epreuves</a>
           </li>
           <li>
             <a href="#top" class="decoration-none text-white hover:text-[#009B48] Montserrat">Infographie</a>
           </li>
           <li>
-            <a href="../pages/charte.html" class="decoration-none text-white hover:text-[#0045AD] Montserrat">Charte Graphique</a>
+            <a href="../pages/charte.html" class="decoration-none text-white hover:text-[#0045AD] Montserrat">Charte
+              Graphique</a>
           </li>
         </ul>
       </div>
@@ -158,7 +171,8 @@
               class="decoration-none text-white hover:text-[#FFD500] Montserrat" target="_blank">JavaScript</a>
           </li>
           <li>
-            <a href="https://gsap.com/" class="decoration-none text-white hover:text-[#0045AD] Montserrat" target="_blank">GSAP</a>
+            <a href="https://gsap.com/" class="decoration-none text-white hover:text-[#0045AD] Montserrat"
+              target="_blank">GSAP</a>
           </li>
         </ul>
       </div>
@@ -192,12 +206,12 @@
 <script src="https://assets.codepen.io/16327/ScrambleTextPlugin3.min.js"></script>
 
 <script>
-window.onload = function() {
-gsap.to("#titreanimgsap", 1.5, {
-  scrambleText: {
-    text: "Infographie",
-    rightToLeft: true,
+  window.onload = function () {
+    gsap.to("#titreanimgsap", 1.5, {
+      scrambleText: {
+        text: "Infographie",
+        rightToLeft: true,
+      }
+    });
   }
-});
-}
 </script>
