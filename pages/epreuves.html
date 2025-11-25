@@ -118,7 +118,7 @@
 
   <section id="sectiontexte" class="bg-[#FFE646] pb-10">
     <!--2x2-->
-    <section id="2x2" class="transition-all duration-300 ease-in-out">
+    <section id="2x2" class="lazy-load-js img.lazy-load-img transition-all duration-300 ease-in-out">
       <div class="flex flex-row items-center space-x-4">
         <img src="../images/epreuvesicons/222.png" alt="2x2" class="w-32 h-32 md:ml-8 md:mt-3" />
         <h1 class="text-2xl font-semibold text-[32px] rubik-mono">Le 2x2</h1>
@@ -159,7 +159,7 @@
     </section>
 
     <!-- 3x3 -->
-    <section id="3x3" class="hidden transition-all duration-300 ease-in-out">
+    <section id="3x3" class="lazy-load-js img.lazy-load-img hidden transition-all duration-300 ease-in-out">
       <div class="flex flex-row items-center space-x-4">
         <img src="../images/epreuvesicons/333.png" alt="3x3" class="w-32 h-32 md:ml-8 md:mt-3" />
         <h1 class="text-2xl font-semibold text-[32px] rubik-mono">Le 3x3</h1>
@@ -204,7 +204,7 @@
     </section>
 
     <!-- 4x4 -->
-    <section id="4x4" class="hidden transition-all duration-300 ease-in-out">
+    <section id="4x4" class="lazy-load-js img.lazy-load-img hidden transition-all duration-300 ease-in-out">
       <div class="flex flex-row items-center space-x-4">
         <img src="../images/epreuvesicons/444.png" alt="4x4" class="w-32 h-32 md:ml-8 md:mt-3" />
         <h1 class="text-2xl font-semibold text-[32px] rubik-mono">Le 4x4</h1>
@@ -248,7 +248,7 @@
     </section>
 
     <!-- Pyraminx -->
-    <section id="pyraminx" class="hidden transition-all duration-300 ease-in-out">
+    <section id="pyraminx" class="lazy-load-js img.lazy-load-img hidden transition-all duration-300 ease-in-out">
       <div class="flex flex-row items-center space-x-4">
         <img src="../images/epreuvesicons/pyraminx.png" alt="Pyraminx" class="w-32 h-32 md:ml-8 md:mt-3" />
         <h1 class="text-2xl font-semibold text-[32px] rubik-mono">Le Pyraminx</h1>
@@ -293,7 +293,7 @@
     </section>
 
     <!-- Blindfolded -->
-    <section id="blindfolded" class="hidden transition-all duration-300 ease-in-out">
+    <section id="blindfolded" class="lazy-load-js img.lazy-load-img hidden transition-all duration-300 ease-in-out">
       <div class="flex flex-row items-center space-x-4">
         <img src="../images/epreuvesicons/333blindfolded.png" alt="Blindfolded" class="w-32 h-32 md:ml-8 md:mt-3" />
         <h1 class="text-2xl font-semibold text-[32px] rubik-mono">Blindfolded</h1>
@@ -353,44 +353,7 @@
     </section>
   </section>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const sectionIds = ['2x2', '3x3', '4x4', 'pyraminx', 'blindfolded'];
-      const buttons = document.querySelectorAll('.epreuve-btn');
-      const sections = sectionIds.map(id => document.getElementById(id));
 
-      function updateSections(showId) {
-        sectionIds.forEach((id, idx) => {
-          const section = sections[idx];
-          if (section) {
-            if (id === showId) {
-              section.classList.remove('hidden');
-            } else {
-              section.classList.add('hidden');
-            }
-          }
-        });
-        buttons.forEach(btn => {
-          const target = btn.getAttribute('data-section');
-          const mapped = (target === "blind") ? "blindfolded" : target;
-          if (mapped === showId) {
-            btn.style.opacity = "1";
-          } else {
-            btn.style.opacity = "0.5";
-          }
-        });
-      }
-      updateSections('2x2');
-      buttons.forEach(btn => {
-        btn.addEventListener('click', function () {
-          const target = btn.getAttribute('data-section');
-          // "blind" --> "blindfolded"
-          const mapped = (target === "blind") ? "blindfolded" : target;
-          updateSections(mapped);
-        });
-      });
-    });
-  </script>
 
 
   <!-- FOOTER -->
@@ -444,9 +407,6 @@
           </li>
           <li>
             <a href="../pages/Infographie.html" class="decoration-none text-white hover:text-[#009B48] Montserrat">Infographie</a>
-          </li>
-          <li>
-            <a href="../pages/charte.html" class="decoration-none text-white hover:text-[#0045AD] Montserrat">Charte Graphique</a>
           </li>
         </ul>
       </div>
@@ -502,6 +462,46 @@
 </html>
 
 <script src="../js/main.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const sectionIds = ['2x2', '3x3', '4x4', 'pyraminx', 'blindfolded'];
+    const buttons = document.querySelectorAll('.epreuve-btn');
+    const sections = sectionIds.map(id => document.getElementById(id));
+
+    function updateSections(showId) {
+      sectionIds.forEach((id, idx) => {
+        const section = sections[idx];
+        if (section) {
+          if (id === showId) {
+            section.classList.remove('hidden');
+          } else {
+            section.classList.add('hidden');
+          }
+        }
+      });
+      buttons.forEach(btn => {
+        const target = btn.getAttribute('data-section');
+        const mapped = (target === "blind") ? "blindfolded" : target;
+        if (mapped === showId) {
+          btn.style.opacity = "1";
+        } else {
+          btn.style.opacity = "0.5";
+        }
+      });
+    }
+    updateSections('2x2');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', function () {
+        const target = btn.getAttribute('data-section');
+        // "blind" --> "blindfolded"
+        const mapped = (target === "blind") ? "blindfolded" : target;
+        updateSections(mapped);
+      });
+    });
+  });
+</script>
+
 <script>
 
 
