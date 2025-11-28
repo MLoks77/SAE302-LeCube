@@ -99,24 +99,44 @@
     <div class="py-6 bg-black flex justify-center">
       <div class="relative inline-block text-left">
         <!-- Burger icon & text button -->
-        <div class="flex items-stretch justify-center gap-1 md:gap-2">
-          <button onclick="showTab('maxime')" title="La machine qui a pulvérisé le Rubik's Cube"
-            class="min-h-[40px] py-1 w-auto flex-auto md:w-44 md:flex-none min-w-0 px-2 md:px-0 bg-[#0000FF] text-white font-bold text-[10px] sm:text-xs md:text-sm leading-tight flex items-center justify-center hover:opacity-90 transition-opacity">
-            Le Purdubik
+        <div class="flex items-center">
+          <hr class="border-0 h-px w-30 " style="background-color:#0000FF; height:4px;" />
+          <hr class="border-0 h-px w-30 mr-4" style="background-color:#008000; height:4px;" />
+          <button id="burgerMenuButton" type="button"
+            class="flex items-center px-4 py-2 bg-[#F3F3F3] border border-gray-200 shadow-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0045AD]"
+            onclick="document.getElementById('burgerDropdown').classList.toggle('hidden')">
+            <!-- Burger Icon SVG -->
+            <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="#212121" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="7" x2="20" y2="7" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="17" x2="20" y2="17" />
+            </svg>
+            <span class="font-semibold text-gray-700 Montserrat text-[16px]"></span>
           </button>
-          <button onclick="showTab('sebastien')" title="L’épopée du SpeedCubing : Cinq légendes qui ont défié le temps"
-            class="min-h-[40px] py-1 w-auto flex-auto md:w-44 md:flex-none min-w-0 px-2 md:px-0 bg-[#008000] text-white font-bold text-[10px] sm:text-xs md:text-sm leading-tight flex items-center justify-center hover:opacity-90 transition-opacity">
-            Les Piliers
-          </button>
-
-          <button onclick="showTab('temi')" title="..."
-            class="min-h-[40px] py-1 w-auto flex-auto md:w-44 md:flex-none min-w-0 px-2 md:px-0 bg-[#FF0000] text-white font-bold text-[10px] sm:text-xs md:text-sm leading-tight flex items-center justify-center hover:opacity-90 transition-opacity">
-            Le Montage
-          </button>
-          <button onclick="showTab('clement')" title="Le rubik’s cube, pourquoi cet engouement ?"
-            class="min-h-[40px] py-1 w-auto flex-auto md:w-44 md:flex-none min-w-0 px-2 md:px-0 bg-[#FFA500] text-white font-bold text-[10px] sm:text-xs md:text-sm leading-tight flex items-center justify-center hover:opacity-90 transition-opacity">
-            La Démocratisation
-          </button>
+          <hr class="border-0 h-px w-30 ml-4" style="background-color:#FF0000; height:4px;" />
+          <hr class="border-0 h-px w-30 " style="background-color:#FFA500; height:4px;" />
+        </div>
+        <div id="burgerDropdown"
+          class="origin-top-center absolute left-1/2 -translate-x-1/2 mt-2 w-160  shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden z-20">
+          <div class="py-1">
+            <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-[#F3F3F3] Montserrat"
+              onclick="showTab('maxime'); document.getElementById('burgerDropdown').classList.add('hidden')">
+              La machine qui a pulvérisé le Rubik's Cube
+            </button>
+            <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-[#F3F3F3] Montserrat"
+              onclick="showTab('sebastien'); document.getElementById('burgerDropdown').classList.add('hidden')">
+              L’épopée du SpeedCubing : Cinq légendes qui ont défié le temps
+            </button>
+            <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-[#F3F3F3] Montserrat"
+              onclick="showTab('temi'); document.getElementById('burgerDropdown').classList.add('hidden')">
+              ...
+            </button>
+            <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-[#F3F3F3] Montserrat"
+              onclick="showTab('clement'); document.getElementById('burgerDropdown').classList.add('hidden')">
+              Le rubik’s cube, pourquoi cet engouement ?
+            </button>
+          </div>
         </div>
       </div>
     </div>
