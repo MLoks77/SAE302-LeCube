@@ -6,6 +6,11 @@
   line-height: 2rem;
 }
 
+.hover\:text-3xl:hover {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 
 
 .md\:hidden {
@@ -22,3 +27,13 @@
   margin-left: 15%;
   margin-right: 15%;
 }
+
+.text-15vw {
+  font-size: 1.5vw;
+  line-height: 1.5;
+}
+
+.text-\[2\.1vw\] {
+  font-size: 2.1vw;
+}
+
