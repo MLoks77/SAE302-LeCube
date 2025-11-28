@@ -63,6 +63,22 @@
         </g>
       </svg>
     </button>
+    <button id="hoverbtn" data-tooltip-target="tooltip-right"
+      class="select-none ml-2 bg-black py-3 px-4 text-center font-sans cursor-pointer text-xs font-bold uppercase text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" class="h-6 w-6 inline">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M9 9C9 5.49997 14.5 5.5 14.5 9C14.5 11.5 12 10.9999 12 13.9999" stroke="#ffffff" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M12 18.01L12.01 17.9989" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </g>
+      </svg>
+    </button>
   </div>
 
   <!-- landing  -->
@@ -87,11 +103,12 @@
 
       <div class="flex flex-col md:flex-row gap-8 ">
         <div class="w-full">
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/3x3.png" alt="3x3"
                 class="w-full h-full object-fill hover:scale-105 transition-transform duration-300" loading="lazy"
-                data-caption="3x3" data-description="1er : Lucas Déglise, 2e : Alexandre Carlier, 3e : Yassine Dammak" />
+                data-caption="3x3"
+                data-description="1er : Lucas Déglise, 2e : Alexandre Carlier, 3e : Yassine Dammak" />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">3x3</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
@@ -103,19 +120,22 @@
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/bigs.png" alt="Big cubes"
                 class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
-                data-caption="Big cubes" data-description="2e 5x5, 3e 6x6, 3e 7x7 : Lucas Déglise | 3e 5x5, 2e 6x6 : Victor Chenu | 1er 5x5, 1er 6x6, 2e 7x7 : Sheldon Rego (absent) | 1er 7x7 : Maxence Baudry (absent)" />
+                data-caption="Big cubes"
+                data-description="2e 5x5, 3e 6x6, 3e 7x7 : Lucas Déglise | 3e 5x5, 2e 6x6 : Victor Chenu | 1er 5x5, 1er 6x6, 2e 7x7 : Sheldon Rego (absent) | 1er 7x7 : Maxence Baudry (absent)" />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">Big cubes</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/3x3 blindfolded.png" alt="3x3 Blindfolded"
                 class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
-                data-caption="3x3 Blindfolded" data-description="1er : Charles Daloz-Baltenberger, 2e : Maxime Madrzyk, 3e : Marius Chaudesaygues" />
+                data-caption="3x3 Blindfolded"
+                data-description="1er : Charles Daloz-Baltenberger, 2e : Maxime Madrzyk, 3e : Marius Chaudesaygues" />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">3x3 Blindfolded</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/clock.png" alt="Clock"
                 class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
-                data-caption="Clock" data-description="1er : Baptiste Bery, 2e : Anthony Lafourcade, 3e : Alexis Le Merrer" />
+                data-caption="Clock"
+                data-description="1er : Baptiste Bery, 2e : Anthony Lafourcade, 3e : Alexis Le Merrer" />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">Clock</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
@@ -127,13 +147,15 @@
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/skewb.png" alt="Skewb"
                 class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
-                data-caption="Skewb" data-description="1er : Maxence Baudry (absent), 2e : Anthony Lafourcade, 3e : Lucas Déglise" />
+                data-caption="Skewb"
+                data-description="1er : Maxence Baudry (absent), 2e : Anthony Lafourcade, 3e : Lucas Déglise" />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">Skewb</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/multiblind.png" alt="3x3 Multi-blind"
                 class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
-                data-caption="3x3 Multi-blind" data-description="1er : Maxime Madrzyk, 2e : William Phommaha, 3e : Étienne Aubry" />
+                data-caption="3x3 Multi-blind"
+                data-description="1er : Maxime Madrzyk, 2e : William Phommaha, 3e : Étienne Aubry" />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">3x3 Multi-blind</figcaption>
             </figure>
           </div>
@@ -154,7 +176,7 @@
 
       <div class="flex flex-col md:flex-row gap-8">
         <div class="w-full">
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/tapis1.jpg" alt="tapis & timers 1"
                 class="w-full h-full object-fill hover:scale-105 transition-transform duration-300" loading="lazy"
@@ -173,7 +195,7 @@
               <img src="../images/imggallerie/tapis3.jpg" alt="tapis & timers 3"
                 class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="tapis & timers 3"
-                data-description="Le stackmat G5 est largement utilisée en speedcubing, appréciée pour sa précision et son look." />
+                data-description="Le stackmat G5 est largement utilisée en speedcubing." />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers 3</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
@@ -308,11 +330,11 @@
         <a href="../pages/articles.html"
           class="flex flex-row items-center transition-transform duration-200 hover:scale-105">
           <img src="../images/button/bl_full.webp" width="50px" height="50px" alt="Page précédente">
-          <p class="ml-4 text-xl Montserrat">Page précédente</p>
+          <p class="ml-4 text-xl Montserrat">Articles</p>
         </a>
         <a href="../pages/epreuves.html"
           class="flex flex-row items-center transition-transform duration-200 hover:scale-105">
-          <p class="mr-4 text-xl Montserrat">Page suivante</p>
+          <p class="mr-4 text-xl Montserrat">Epreuves</p>
           <img src="../images/button/br_full.webp" width="50px" height="50px" alt="Page suivante">
         </a>
       </div>
@@ -341,7 +363,7 @@
               class="decoration-none text-white hover:text-[#009B48] Montserrat">Articles</a>
           </li>
           <li>
-            <a href="#top" class="decoration-none text-white hover:text-[#E00000] Montserrat">galerie</a>
+            <a href="#top" class="decoration-none text-white hover:text-[#E00000] Montserrat">Galerie</a>
           </li>
           <li>
             <a href="../pages/interviews.html"
@@ -356,7 +378,7 @@
           </li>
           <li>
             <a href="../pages/Infographie.html"
-              class="decoration-none text-white hover:text-[#009B48] Montserrat">Infographie</a>
+              class="decoration-none text-white hover:text-[#009B48] Montserrat">Statistiques</a>
           </li>
         </ul>
       </div>

@@ -82,3 +82,33 @@
 .shadow-white {
   box-shadow: -8px 8px 20px 0 rgba(255, 255, 255, 0.8), -3px 1.5px 6px 0 rgba(255,255,255,0.5);
 }
+
+#hoverbtn {
+  position: relative;
+}
+
+#hoverbtn[data-tooltip-target="tooltip-right"]::after {
+  content: "Le speedcubing est une discipline sportive qui consiste à résoudre un Rubik's Cube ou tout autre puzzle 3D le plus rapidement possible.";
+  position: absolute;
+  left: 110%;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  background: #222;
+  color: #fff;
+  padding: 0.35em 0.9em;
+  border-radius: 8px;
+  box-shadow: 0 4px 18px 2px rgba(0,0,0,0.16);
+  font-size: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s;
+  z-index: 50;
+}
+
+#hoverbtn[data-tooltip-target="tooltip-right"]:hover::after,
+#hoverbtn[data-tooltip-target="tooltip-right"]:focus::after {
+  opacity: 1;
+}
+
+

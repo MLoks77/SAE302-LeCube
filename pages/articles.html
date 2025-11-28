@@ -50,7 +50,7 @@
         </div>
       </a>
       <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
-        class="flex items-center bg-black backdrop-blur-sm shadow-lg px-4 py-3 hover:scale-105 transition-all"
+        class="flex cursor-pointer items-center bg-black backdrop-blur-sm shadow-lg px-4 py-3 hover:scale-105 transition-all"
         title="Retour en haut">
         <svg fill="#ffffff" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve" stroke="#ffffff"
@@ -61,6 +61,22 @@
             <polygon
               points="7,12 7,11 9,11 9,9 11,9 11,21 13,21 13,9 15,9 15,11 17,11 17,12 19,12 19,9 17,9 17,7 15,7 15,5 14,5 14,4 13,4 13,3 11,3 11,4 10,4 10,5 9,5 9,7 7,7 7,9 5,9 5,12 ">
             </polygon>
+          </g>
+        </svg>
+      </button>
+      <button id="hoverbtn" data-tooltip-target="tooltip-right"
+        class="select-none bg-black py-3 px-4 cursor-pointer text-center font-sans text-xs font-bold uppercase text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" class="h-6 w-6 inline">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+              stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M9 9C9 5.49997 14.5 5.5 14.5 9C14.5 11.5 12 10.9999 12 13.9999" stroke="#ffffff" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M12 18.01L12.01 17.9989" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round"></path>
           </g>
         </svg>
       </button>
@@ -197,8 +213,8 @@
                   celui de la machine. Elle applique les principes du <em>speedcubing</em>, mais sans
                   la fatigue, sans les erreurs, et
                   avec une précision millimétrée.<br><br></p>
-                  <h1 class="rubik-mono mb-4">L'influence humaine</h1>
-                  <p class="Montserrat text-[16px] leading-relaxed mb-4">
+                <h1 class="rubik-mono mb-4">L'influence humaine</h1>
+                <p class="Montserrat text-[16px] leading-relaxed mb-4">
                   Ce qui est intéressant, c'est que sans les <em>speedcubers</em> humains, ce genre de
                   projet n'existerait
                   probablement pas. Ce sont leurs techniques, leur imagination et leur passion qui ont
@@ -366,7 +382,8 @@
               <br><br>
               <article>
                 <p class="Montserrat text-[16px] leading-relaxed mb-4">
-                  Erno Rubik inventa le cube en 1974 pour ses étudiants en cours de géométrie, avant d’être commercialisé
+                  Erno Rubik inventa le cube en 1974 pour ses étudiants en cours de géométrie, avant d’être
+                  commercialisé
                   mondialement en 1979, où il va gagner en popularité dans les trois années qui suivent
                 </p>
 
@@ -381,9 +398,11 @@
 
                 <p class="Montserrat text-[16px] leading-relaxed mb-4">
                   Rubik ne voit pas son cube comme un casse-tête : ce n’est qu’après avoir mélangé les couleurs pour la
-                  première fois qu’il tente de le reconstituer et met près d’un mois à y parvenir. Conscient du potentiel
+                  première fois qu’il tente de le reconstituer et met près d’un mois à y parvenir. Conscient du
+                  potentiel
                   de son invention, il dépose un brevet en Hongrie le 30 janvier 1975. Celui-ci se fait connaître par
-                  bouche-à-oreille, mais cela reste connu localement.En février 1979, un homme d’affaires hongrois, Tibor
+                  bouche-à-oreille, mais cela reste connu localement.En février 1979, un homme d’affaires hongrois,
+                  Tibor
                   Laczi, présente le Magic Cube au Salon du jouet de Nuremberg. Sur place, il rencontre Tom Kremer,
                   fondateur de la société Seven Towns, qui perçoit le potentiel mondial du cube. Ensemble, ils négocient
                   avec l’entreprise américaine Ideal Toy Corporation, qui acquiert les droits de commercialisation.
@@ -402,7 +421,8 @@
                 <p class="Montserrat text-[16px] leading-relaxed mb-4">
                   Entre 1980 et 1982, le Rubik’s Cube s’impose comme le casse-tête emblématique de cette époque. Selon
                   certaines sources, entre 1979 et 1984, près de 300 millions de cubes auraient été vendus
-                  mondialement.Des livres explicatifs, des guides de résolution (You Can Do the Cube), ainsi que des clubs
+                  mondialement.Des livres explicatifs, des guides de résolution (You Can Do the Cube), ainsi que des
+                  clubs
                   de passionnés voient le jour. Le cube ne reste pas qu’un simple loisir puisqu’il entre même dans
                   certaines collections de musées, comme le prestigieux MoMA en 1981, et s’intègre parmi les jouets les
                   plus emblématiques. Cela conduit même à la première compétition en 1982, à Budapest. On peut ajouter à
@@ -415,14 +435,17 @@
                   Après l’engouement des années 1980, la popularité du cube s’essouffle, comme pour tout phénomène de
                   mode. Cependant, avec l’ascension d’Internet, il retrouve un regain de popularité grâce aux nombreuses
                   communautés en ligne qui recréent des liens entre passionné·e·s, ainsi qu’aux nombreux tutoriels vidéo
-                  qui expliquent comment le résoudre. De plus, depuis 2004, la création de la WCA (World Cube Association)
+                  qui expliquent comment le résoudre. De plus, depuis 2004, la création de la WCA (World Cube
+                  Association)
                 </p>
 
                 <h1 class="rubik-mono py-4">supervise les compétitions de speedcubing.</h1>
 
                 <p class="Montserrat text-[16px] leading-relaxed mb-4">
-                  En conclusion, le Rubik’s Cube, qui était à l’origine un outil pédagogique, s’est transformé en l’un des
-                  casse-tête les plus célèbres, avec ses nombreuses déclinaisons et la popularisation des compétitions de
+                  En conclusion, le Rubik’s Cube, qui était à l’origine un outil pédagogique, s’est transformé en l’un
+                  des
+                  casse-tête les plus célèbres, avec ses nombreuses déclinaisons et la popularisation des compétitions
+                  de
                   speedcubing. Le Rubik’s Cube est un objet qui a réussi à transcender son but principal.
                 </p>
               </article>
@@ -430,7 +453,8 @@
               <p class="Montserrat"><em>Rédigé par Clément Guesnon</em></p>
             </div>
             <div class="w-full flex flex-col items-center">
-              <img class="drop-shadow-lg mx-auto w-full max-w-2xl mt-4 mb-2" src="../images/imgarticles/originalcube.png"
+              <img class="drop-shadow-lg mx-auto w-full max-w-2xl mt-4 mb-2"
+                src="../images/imgarticles/originalcube.png"
                 alt="Cube mis en vente lors de ses débuts à l'international">
               <div class="Montserrat text-center text-[14px] mt-2 mb-4">
                 Rubik cube mis en vente lors de ses débuts à l'international
@@ -452,11 +476,11 @@
         <a href="../pages/histoire.html"
           class="flex flex-row items-center transition-transform duration-200 hover:scale-105">
           <img src="../images/button/bl_full.webp" width="50px" height="50px" alt="Page précédente">
-          <p class="ml-4 text-xl Montserrat">Page précédente</p>
+          <p class="ml-4 text-xl Montserrat">Histoire</p>
         </a>
         <a href="../pages/galerie.html"
           class="flex flex-row items-center transition-transform duration-200 hover:scale-105">
-          <p class="mr-4 text-xl Montserrat">Page suivante</p>
+          <p class="mr-4 text-xl Montserrat">Galerie</p>
           <img src="../images/button/br_full.webp" width="50px" height="50px" alt="Page suivante">
         </a>
       </div>
@@ -485,7 +509,7 @@
           </li>
           <li>
             <a href="../pages/galerie.html"
-              class="decoration-none text-white hover:text-[#E00000] Montserrat">galerie</a>
+              class="decoration-none text-white hover:text-[#E00000] Montserrat">Galerie</a>
           </li>
           <li>
             <a href="../pages/interviews.html"
@@ -500,7 +524,7 @@
           </li>
           <li>
             <a href="../pages/Infographie.html"
-              class="decoration-none text-white hover:text-[#009B48] Montserrat">Infographie</a>
+              class="decoration-none text-white hover:text-[#009B48] Montserrat">Statistiques</a>
           </li>
 
         </ul>
