@@ -100,25 +100,25 @@
       <div class="relative inline-block text-left">
         <!-- Burger icon & text button -->
         <div class="flex items-center">
-          <hr class="border-0 h-px w-30 mr-4" style="background-color:#0000FF; height:2px;" />
-          <hr class="border-0 h-px w-30 mr-4" style="background-color:#008000; height:2px;" />
+          <hr class="border-0 h-px w-30 " style="background-color:#0000FF; height:4px;" />
+          <hr class="border-0 h-px w-30 mr-4" style="background-color:#008000; height:4px;" />
           <button id="burgerMenuButton" type="button"
-            class="flex items-center px-4 py-2 bg-[#F3F3F3] border border-gray-200 rounded-md shadow-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0045AD]"
+            class="flex items-center px-4 py-2 bg-[#F3F3F3] border border-gray-200 shadow-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0045AD]"
             onclick="document.getElementById('burgerDropdown').classList.toggle('hidden')">
             <!-- Burger Icon SVG -->
-            <svg class="h-7 w-7 mr-3" viewBox="0 0 24 24" fill="none" stroke="#212121" stroke-width="2"
+            <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="#212121" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round">
               <line x1="4" y1="7" x2="20" y2="7" />
               <line x1="4" y1="12" x2="20" y2="12" />
               <line x1="4" y1="17" x2="20" y2="17" />
             </svg>
-            <span class="font-semibold text-gray-700 Montserrat text-[16px]">Les articles</span>
+            <span class="font-semibold text-gray-700 Montserrat text-[16px]"></span>
           </button>
-          <hr class="border-0 h-px w-30 ml-4" style="background-color:#FF0000; height:2px;" />
-          <hr class="border-0 h-px w-30 ml-4" style="background-color:#FFA500; height:2px;" />
+          <hr class="border-0 h-px w-30 ml-4" style="background-color:#FF0000; height:4px;" />
+          <hr class="border-0 h-px w-30 " style="background-color:#FFA500; height:4px;" />
         </div>
         <div id="burgerDropdown"
-          class="origin-top-center absolute left-1/2 -translate-x-1/2 mt-2 w-160 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden z-20">
+          class="origin-top-center absolute left-1/2 -translate-x-1/2 mt-2 w-160  shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden z-20">
           <div class="py-1">
             <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-[#F3F3F3] Montserrat"
               onclick="showTab('maxime'); document.getElementById('burgerDropdown').classList.add('hidden')">
@@ -231,15 +231,15 @@
               <p class="Montserrat mb-8"><em>Rédigé par Maxime Derènes</em></p>
             </div>
 
-            <div class="w-full flex flex-col items-center">
+            <div class="w-full text-center flex flex-col items-center">
               <img class="drop-shadow-lg mx-auto w-full max-w-2xl mt-4 mb-2"
                 src="../images/imgarticles/machinerecord.jpg"
                 alt="De gauche à droite : Matthew Patrohay, Aden Hurd, Junpei Ota et Milind Kulkarni, directeur Michael et
                                 Katherine Birck, principal et professeur à la Elmore Family School of Electrical and Computer Engineering.">
               <div class="Montserrat text-center text-[14px] mt-2 mb-4">
-                De gauche à droite : Matthew Patrohay, Aden Hurd, Junpei Ota et Milind Kulkarni,
+                Matthew Patrohay, Aden Hurd, Junpei Ota et Milind Kulkarni,
                 directeur Michael et
-                Katherine Birck, principal et professeur à la Elmore Family School of Electrical and
+                Katherine Birck,<br> principal et professeur à la Elmore Family School of Electrical and
                 Computer Engineering.
               </div>
             </div>
@@ -452,7 +452,7 @@
               <br><br>
               <p class="Montserrat"><em>Rédigé par Clément Guesnon</em></p>
             </div>
-            <div class="w-full flex flex-col items-center">
+            <div class="w-full flex flex-col text-center items-center">
               <img class="drop-shadow-lg mx-auto w-full max-w-2xl mt-4 mb-2"
                 src="../images/imgarticles/originalcube.png"
                 alt="Cube mis en vente lors de ses débuts à l'international">
