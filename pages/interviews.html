@@ -95,10 +95,17 @@
 
   <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 bg-black py-18 gap-8">
     <!-- 1. Vidéo Chevry -->
-    <div class="flex items-center justify-center p-4 lazy-load-js img.lazy-load-img">
-      <video poster="../images/chevry.jpg" class="w-full rounded-base bg-[#FF9940]  p-4 rounded" controls>
-        <source src="../images/videos/interviews1.mp4" type="video/mp4">
-      </video>
+    <div class="flex items-center justify-center p-4 lazy-load-js img.lazy-load-img w-full">
+      <div style="padding:56.25% 0 0 0;position:relative;width:100%;max-width:800px;">
+        <iframe src="https://player.vimeo.com/video/1141427288?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          style="position:absolute;top:0;left:0;width:100%;height:100%;"
+          title="Chevry Miel 2025"
+          class="bg-[#2D8FFF] p-2 rounded"></iframe>
+      </div>
+      <script src="https://player.vimeo.com/api/player.js"></script>
     </div>
     <!-- 2. Présentation Chevry -->
     <div class="flex flex-col items-start p-4 lazy-load-js img.lazy-load-img">
@@ -156,9 +163,16 @@
       </p>
     </div>
     <div class="flex items-center justify-center md:row-start-2 md:col-start-2 p-4 lazy-load-js img.lazy-load-img">
-      <video poster="../images/videos/minias/alexis.png" class="w-full rounded-base bg-[#2D8FFF] p-4 rounded" controls>
-        <source src="../images/videos/interviews1.mp4" type="video/mp4">
-      </video>
+      <div style="padding:56.25% 0 0 0;position:relative;width:100%;max-width:800px;">
+        <iframe src="https://player.vimeo.com/video/1141427288?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          style="position:absolute;top:0;left:0;width:100%;height:100%;"
+          title="Chevry Miel 2025"
+          class="bg-[#7EDD3F] p-2 rounded"></iframe>
+      </div>
+      <script src="https://player.vimeo.com/api/player.js"></script>
     </div>
     <!-- 4. Charles - portrait -->
     <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 md:row-start-3 md:col-start-1 md:col-span-2">
@@ -169,22 +183,28 @@
         </h1>
         <p class="text-xxl text-white md:text-base Montserrat">
           Commençant à pratiquer le 3x3 à l’aveugle il y a seulement quelques années, Charles nous partage ce qu’il a
-          ressenti quand il a battu <strong>le record d’Europe en single* à 13,76 secondes</strong>, la semaine passée à
+          ressenti quand il a battu <strong>le record d’Europe en single* blinded*</strong>, la semaine passée à
           Strasbourg.
-          Deux heures après cette interview, il bat à nouveau le record d’Europe, cette fois en mean* avec 17,02
-          secondes.<br><br>
+          Deux heures après cette interview, il bat à nouveau le record d’Europe, cette fois en mean* blinded.<br><br>
         <p>
         <p class="text-xl text-white md:text-base Montserrat">
           *single : sur une résolution ; <br>
-          *mean : moyenne sur trois résolutions.
+          *mean : moyenne sur trois résolutions ;<br>
+          *blinded : épreuve avec les yeux bandés.
         </p>
       </div>
       <!-- A gauche sur PC, en bas sur mobile : Vidéo -->
       <div class="flex items-center justify-center p-4 lazy-load-js img.lazy-load-img order-2 md:order-1">
-        <video poster="../images/videos/minias/charles.png" class="w-full rounded-base bg-[#7EDD3F] p-4 rounded"
-          controls>
-          <source src="../images/videos/interviews1.mp4" type="video/mp4">
-        </video>
+        <div style="padding:56.25% 0 0 0;position:relative;width:100%;max-width:800px;">
+          <iframe src="https://player.vimeo.com/video/1141427288?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;"
+            title="Chevry Miel 2025"
+            class="bg-[#FFE646] p-2 rounded"></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
       </div>
     </div>
   </div>
@@ -308,7 +328,7 @@
 
 <script>
   window.onload = function () {
-    gsap.to("#titreanimgsap", 1.5, {
+    gsap.to("#titreanimgsap", 2, {
       scrambleText: {
         text: "Interviews",
         rightToLeft: true,

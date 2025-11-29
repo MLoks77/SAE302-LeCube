@@ -92,15 +92,10 @@
   </div>
 
 
-  <!-- première gallerie -->
-  <div class="w-full py-22 lazy-load-js" id="gallerie1">
+  <!-- Gallerie cachée pour le carousel (sera affichée en JS plus tard) -->
+  <div class="w-full py-22 lazy-load-js hidden" id="gallerie1">
     <div class="max-w-6xl mx-auto px-4 md:px-0">
       <!-- Gallerie caché n°1 -->
-      <div class="flex items-center mb-12">
-        <hr class="flex-1 border-gray-600">
-        <h2 class="text-3xl rubik-mono font-bold mx-6 text-center text-[#212121]">Le podium</h2>
-        <hr class="flex-1 border-gray-600">
-      </div>
       <div class="flex flex-col md:flex-row gap-8 ">
         <div class="w-full">
           <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
@@ -121,7 +116,7 @@
               <img src="../images/imggallerie/bigs.png" alt="Big cubes"
                 class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="Big cubes"
-                data-description="2e 5x5, 3e 6x6, 3e 7x7 : Lucas Déglise | 3e 5x5, 2e 6x6 : Victor Chenu | 1er 5x5, 1er 6x6, 2e 7x7 : Sheldon Rego (absent) | 1er 7x7 : Maxence Baudry (absent)" />
+                data-description="1er 5x5, 1er 6x6, 2e 7x7 : Sheldon Rego (absent) | 1er 7x7 : Maxence Baudry (absent) | 2e 5x5, 3e 6x6, 3e 7x7 : Lucas Déglise | 3e 5x5, 2e 6x6 : Victor Chenu" />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">Big cubes</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
@@ -161,6 +156,29 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <br><br><br><br>
+  <div class="flex flex-col items-center justify-center mx-auto py-24" id="podium-preview">
+    <div class="w-full flex items-center mb-12 max-w-6xl">
+      <hr class="flex-1 border-gray-600" />
+      <h2 class="text-3xl rubik-mono font-bold mx-6 text-center text-[#212121] whitespace-nowrap">PODIUM</h2>
+      <hr class="flex-1 border-gray-600" />
+    </div>
+
+    <div class="podium-thumbnail   relative group w-full max-w-xl aspect-[4/3] flex items-center justify-center">
+      <img src="../images/imggallerie/chevrymiel2025.webp" alt="Aperçu galerie podium"
+        class="rounded-xl w-full h-full object-cover shadow-lg transition-all duration-500 max-w-[320px] max-h-[240px]" />
+      <div
+        class="podium-overlay absolute inset-0 rounded-xl bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center pointer-events-none">
+      </div>
+      <button
+        onclick="document.getElementById('gallerie1').classList.remove('hidden');document.getElementById('podium-preview').classList.add('hidden');"
+        class="podium-btn absolute inset-0 m-auto h-12 w-40 flex items-center justify-center rounded-full bg-[#212121] text-white rubik-mono font-bold text-lg opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 pointer-events-none shadow-lg"
+        style="pointer-events: none;">
+        Chevry Miel<br> 2025
+      </button>
     </div>
   </div>
 
@@ -436,7 +454,9 @@
 
 <script src="../js/main.js"></script>
 
-<!-- Full cursor flemme-->
+
+
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     // Pour 3 galeries, générer un carrousel pour chacune
@@ -449,7 +469,6 @@
         closeBtnId: 'carousel-close-btn-galerie1',
         imgId: 'carousel-img-galerie1',
         captionId: 'carousel-caption-galerie1',
-        // Selecteur des images pour la galerie 1 et 2
         imageSelector: '.grid .overflow-hidden img'
       },
       {
@@ -470,10 +489,12 @@
         closeBtnId: 'carousel-close-btn-galerie3',
         imgId: 'carousel-img-galerie3',
         captionId: 'carousel-caption-galerie3',
-        // Sélecteur images pour la gallerie 3 (structure différente: grid sans overflow-hidden)
         imageSelector: '.grid img'
       }
     ];
+
+    // On stockera le tableau d'objets { images, modal, openModalAtIndex[] } pour accès externe
+    const galerieRefs = {};
 
     galeries.forEach(function (galerieData, galerieIndex) {
       const galerie = document.getElementById(galerieData.id);
@@ -513,7 +534,6 @@
       `;
       document.body.appendChild(modal);
 
-      // Liste des images de cette galerie (+ description longue facultative pour la modale)
       const images = Array.from(galleryImages).map(img => ({
         src: img.src,
         alt: img.alt || "",
@@ -549,6 +569,12 @@
         else if (modal.msRequestFullscreen) modal.msRequestFullscreen();
       }
 
+      // Sauvegarde la fonction d'ouverture pour accès externe (depuis bouton preview)
+      galerieRefs[galerieData.id] = {
+        images,
+        openModalAtIndex
+      };
+
       // Associer les images de cette galerie au carrousel
       galleryImages.forEach((img, idx) => {
         img.style.cursor = 'zoom-in';
@@ -568,7 +594,6 @@
         renderModalImage(currentIndex);
       };
 
-      // Quitter le plein écran et fermer le modal
       function closeModal() {
         modal.style.display = 'none';
         if (document.fullscreenElement) document.exitFullscreen();
@@ -581,13 +606,11 @@
         closeModal();
       };
       modal.onclick = function (e) {
-        // Ne ferme la modale que si clique à l'extérieur du conteneur image+caption.
         if (e.target === modal) {
           closeModal();
         }
       };
 
-      // Touches clavier: Échap pour quitter, ←/→ pour navigation (pour CHAQUE galerie)
       document.addEventListener('keydown', function (e) {
         if (modal.style.display === 'flex') {
           if (e.key === 'Escape') closeModal();
@@ -596,7 +619,6 @@
         }
       });
 
-      // Gestion sortie du plein écran (pour fermer la modale si l'utilisateur sort via ESC)
       function onFullscreenChange() {
         if (
           modal.style.display === 'flex' &&
@@ -610,6 +632,21 @@
       document.addEventListener('mozfullscreenchange', onFullscreenChange);
       document.addEventListener('MSFullscreenChange', onFullscreenChange);
     });
+
+
+    // Ajout du clic sur le thumbnail de preview pour ouvrir la modale de la première image de galerie 1 (podium)
+    var podiumPreview = document.querySelector('#podium-preview .podium-thumbnail img');
+    if (podiumPreview) {
+      podiumPreview.style.cursor = 'zoom-in';
+      podiumPreview.addEventListener('click', function (e) {
+        // Affiche le modal plein écran de galerie 1 sur la première image
+        // Affiche la galerie 1 si elle était masquée (optionnel, selon votre logique)
+        // document.getElementById('gallerie1').classList.remove('hidden');
+        if (galerieRefs['gallerie1'] && galerieRefs['gallerie1'].openModalAtIndex) {
+          galerieRefs['gallerie1'].openModalAtIndex(0);
+        }
+      });
+    }
   });
 </script>
 

@@ -78,6 +78,38 @@
   background-repeat: no-repeat;
 }
 
+#podium-preview .podium-thumbnail {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#podium-preview .podium-thumbnail img {
+  transition: filter 0.3s;
+  display: block;
+}
+
+#podium-preview .podium-thumbnail:hover img {
+  filter: brightness(0.6);
+}
+
+#podium-preview .podium-overlay {
+  pointer-events: none;
+}
+
+#podium-preview .podium-btn {
+  pointer-events: none;
+  opacity: 0;
+}
+
+#podium-preview .group:hover .podium-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#podium-preview .group:hover .podium-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
 
 .shadow-white {
   box-shadow: -8px 8px 20px 0 rgba(255, 255, 255, 0.8), -3px 1.5px 6px 0 rgba(255,255,255,0.5);
@@ -111,4 +143,8 @@
   opacity: 1;
 }
 
+.max-w-6xl {
+  max-width: 72rem;
+}
+  
 
