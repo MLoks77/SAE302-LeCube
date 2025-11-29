@@ -160,38 +160,64 @@
   </div>
 
   <br><br><br><br>
-  <div class="flex flex-col items-center justify-center mx-auto py-24" id="podium-preview">
+  <section>
 
-    <div class="podium-thumbnail   relative group w-full max-w-xl aspect-[4/3] flex items-center justify-center">
-      <img src="../images/imggallerie/chevrymiel2025.webp" alt="Aperçu galerie podium"
-        class="rounded-xl w-full h-full object-cover shadow-lg transition-all duration-500 max-w-[320px] max-h-[240px]" />
-      <div
-        class="podium-overlay absolute inset-0 rounded-xl bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center pointer-events-none">
+    <div class="flex items-center mb-12 max-w-6xl mx-auto px-4 md:px-0 lazy-load-js">
+      <hr class="flex-1 border-gray-600">
+      <img src="../images/logo_lecube.webp" class="mx-4" width="50px" height="50px">
+      <hr class="flex-1 border-gray-600">
+    </div>
+
+    <div class="flex flex-col items-center italic mb-12 w-full mx-auto px-4 md:px-0 lazy-load-js">
+      <p class="text-center">Sur ordinateur, vous pouvez utiliser les flèches directionnelles de votre clavier
+        à travers nos galeries.</p>
+      <div class="flex justify-center mt-4 w-full">
+        <svg fill="#000000" width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M7.78 5.97a.75.75 0 00-1.06 0l-5.25 5.25a.75.75 0 000 1.06l5.25 5.25a.75.75 0 001.06-1.06L3.81 12.5h16.38l-3.97 3.97a.75.75 0 101.06 1.06l5.25-5.25a.75.75 0 000-1.06l-5.25-5.25a.75.75 0 10-1.06 1.06L20.19 11H3.81l3.97-3.97a.75.75 0 000-1.06z">
+            </path>
+          </g>
+        </svg>
       </div>
-      <button
-        onclick="document.getElementById('galerie1').classList.remove('hidden');document.getElementById('podium-preview').classList.add('hidden');"
-        class="podium-btn absolute inset-0 m-auto h-12 w-40 flex items-center justify-center rounded-full bg-[#212121] text-white rubik-mono font-bold text-lg opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 pointer-events-none"
-        style="pointer-events: none;">
-        Podiums
-      </button>
     </div>
-  </div>
 
-  <div class="flex flex-col items-center justify-center mx-auto py-24" id="tapistimerPreview">
-  <div class="tapistimer-thumbnail relative group w-full max-w-xl aspect-[4/3] flex items-center justify-center">
-    <img src="../images/imggallerie/tapis1.jpg" alt="Aperçu galerie tapistimer"
-      class="rounded-xl w-full h-full object-cover shadow-lg transition-all duration-500 max-w-[320px] max-h-[240px]" />
-    <div
-      class="tapistimer-overlay absolute inset-0 rounded-xl bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center pointer-events-none">
+    <div class="flex flex-col md:flex-row items-center justify-center mx-auto py-24 gap-8 lazy-load-js">
+      <div class="flex flex-col items-center justify-center" id="podium-preview">
+        <div class="podium-thumbnail relative group w-full max-w-xl aspect-[4/3] flex items-center justify-center">
+          <img src="../images/imggallerie/chevrymiel2025.webp" alt="Aperçu galerie podium"
+            class="rounded-xl w-full h-full object-cover shadow-lg transition-all duration-500 max-w-[320px] max-h-[240px]" />
+          <div
+            class="podium-overlay absolute inset-0 rounded-xl bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center pointer-events-none">
+          </div>
+          <button
+            onclick="document.getElementById('galerie1').classList.remove('hidden');document.getElementById('podium-preview').classList.add('hidden');"
+            class="podium-btn absolute inset-0 m-auto h-12 w-40 flex items-center justify-center rounded-full bg-[#212121] text-white rubik-mono font-bold text-lg opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 pointer-events-none"
+            style="pointer-events: none;">
+            Podiums
+          </button>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center justify-center" id="tapistimerPreview">
+        <div class="tapistimer-thumbnail relative group w-full max-w-xl aspect-[4/3] flex items-center justify-center">
+          <img src="../images/imggallerie/tapis1.jpg" alt="Aperçu galerie tapistimer"
+            class="rounded-xl w-full h-full object-cover shadow-lg transition-all duration-500 max-w-[320px] max-h-[240px]" />
+          <div
+            class="tapistimer-overlay absolute inset-0 rounded-xl bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center pointer-events-none">
+          </div>
+          <button
+            onclick="document.getElementById('galerie2').classList.remove('hidden');document.getElementById('tapistimerPreview').classList.add('hidden');"
+            class="tapistimer-btn absolute inset-0 m-auto h-12 w-40 flex items-center justify-center rounded-full bg-[#212121] text-white rubik-mono font-bold text-lg opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 pointer-events-none"
+            style="pointer-events: none;">
+            Tapis & Timers
+          </button>
+        </div>
+      </div>
     </div>
-    <button
-      onclick="document.getElementById('galerie2').classList.remove('hidden');document.getElementById('tapistimerPreview').classList.add('hidden');"
-      class="tapistimer-btn  absolute inset-0 m-auto h-12 w-40 flex items-center justify-center rounded-full bg-[#212121] text-white rubik-mono font-bold text-lg opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 pointer-events-none"
-      style="pointer-events: none;">
-      Tapis & Timers
-    </button>
-  </div>
-  </div>
+  </section>
 
   <!-- deuxième gallerie -->
   <div class="w-full py-16 lazy-load-js hidden" id="galerie2">
@@ -276,12 +302,12 @@
   </div>
 
   <!-- N°3 gallerie -->
-  <div class="w-full py-16  lazy-load-js" id="gallerie3">
+  <div class="w-full py-16" id="gallerie3">
     <div class="max-w-6xl mx-auto px-4 md:px-0">
 
       <div class="flex items-center mb-12">
         <hr class="flex-1 border-gray-600">
-        <h2 class="text-3xl rubik-mono font-bold mx-6 text-center text-[#212121]">LA TROUSSE DU SPEEDCUBER</h2>
+        <h2 class="text-3xl rubik-mono font-bold mx-6 text-center text-[#212121] lazy-load-js lazy-load-img">LA TROUSSE DU SPEEDCUBER</h2>
         <hr class="flex-1 border-gray-600">
       </div>
 
@@ -293,7 +319,7 @@
               sm:grid-cols-3 sm:grid-rows-3
               md:grid-cols-4 md:grid-rows-3
             ">
-            <figure class="overflow-hidden rounded-xl shadow-lg bg-white col-span-2 md:col-span-2 flex flex-col">
+            <figure class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white col-span-2 md:col-span-2 flex flex-col">
               <img src="../images/imggallerie/cube4.webp" alt="Une rangée de cube"
                 class="w-full h-full object-fill hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="Une rangée de cube" data-description="Du 3x3 au 7x7" />
@@ -301,7 +327,7 @@
               </figcaption>
             </figure>
             <figure
-              class="overflow-hidden rounded-xl shadow-lg bg-white col-span-2 md:col-span-2 md:col-start-3 flex flex-col">
+              class=" lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white col-span-2 md:col-span-2 md:col-start-3 flex flex-col">
               <img src="../images/imggallerie/cube2.webp" alt="Le matériel d'entretien pour un cube"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="Le matériel d'entretien pour un cube"
@@ -310,7 +336,7 @@
               </figcaption>
             </figure>
             <figure
-              class="overflow-hidden rounded-xl shadow-lg bg-white row-span-2 md:row-span-2 md:row-start-2 flex flex-col">
+              class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white row-span-2 md:row-span-2 md:row-start-2 flex flex-col">
               <img src="../images/imggallerie/cube3.webp" alt="Un sac de speedcuber"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="Un sac de speedcuber"
@@ -319,33 +345,33 @@
               </figcaption>
             </figure>
             <figure
-              class="overflow-hidden rounded-xl shadow-lg bg-white row-span-2 md:row-span-2 md:col-start-4 md:row-start-2 flex flex-col">
+              class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white row-span-2 md:row-span-2 md:col-start-4 md:row-start-2 flex flex-col">
               <img src="../images/imggallerie/cube9.webp" alt="La tour de cube"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="La tour de cube"
                 data-description="Malgré l'augmentation du nombre de tranches, la taille du cube reste la même." /><!-- droite -->
               <figcaption class="text-center py-8 text-[15px] text-gray-600 rubik-mono">La tour de cube</figcaption>
             </figure>
-            <figure class="overflow-hidden rounded-xl shadow-lg bg-white md:col-start-2 md:row-start-2 flex flex-col">
+            <figure class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white md:col-start-2 md:row-start-2 flex flex-col">
               <img src="../images/imggallerie/cube5.webp" alt="pyraminx"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="pyraminx"
                 data-description="Un cube pyraminx. Forme triangulaire, résolution intéressante." />
               <figcaption class="text-center py-4 text-[15px] text-gray-600 rubik-mono">Cube pyraminx</figcaption>
             </figure>
-            <figure class="overflow-hidden rounded-xl shadow-lg bg-white md:col-start-3 md:row-start-2 flex flex-col">
+            <figure class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white md:col-start-3 md:row-start-2 flex flex-col">
               <img src="../images/imggallerie/cube6.webp" alt="megaminx"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="megaminx" data-description="Cube megaminx. Dodécagone avec 12 faces uniques." />
               <figcaption class="text-center py-4 text-[15px] text-gray-600 rubik-mono">Cube megaminx</figcaption>
             </figure>
-            <figure class="overflow-hidden rounded-xl shadow-lg bg-white md:col-start-2 md:row-start-3 flex flex-col">
+            <figure class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white md:col-start-2 md:row-start-3 flex flex-col">
               <img src="../images/imggallerie/cube7.webp" alt="FTO"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="FTO" data-description="Cube FTO. Axes de rotation diagonaux, un défi pour les experts." />
               <figcaption class="text-center py-4 text-[15px] text-gray-600 rubik-mono">Cube FTO</figcaption>
             </figure>
-            <figure class="overflow-hidden rounded-xl shadow-lg bg-white md:col-start-3 md:row-start-3 flex flex-col">
+            <figure class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white md:col-start-3 md:row-start-3 flex flex-col">
               <img src="../images/imggallerie/cube1.webp" alt="Cube mirror 3x3"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="Cube mirror 3x3"
