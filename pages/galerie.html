@@ -93,7 +93,7 @@
 
 
   <!-- Gallerie cachée pour le carousel (sera affichée en JS plus tard) -->
-  <div class="w-full py-22 lazy-load-js hidden" id="gallerie1">
+  <div class="w-full py-22 lazy-load-js hidden" id="galerie1">
     <div class="max-w-6xl mx-auto px-4 md:px-0">
       <!-- Gallerie caché n°1 -->
       <div class="flex flex-col md:flex-row gap-8 ">
@@ -160,30 +160,67 @@
   </div>
 
   <br><br><br><br>
-  <div class="flex flex-col items-center justify-center mx-auto py-24" id="podium-preview">
-    <div class="w-full flex items-center mb-12 max-w-6xl">
-      <hr class="flex-1 border-gray-600" />
-      <h2 class="text-3xl rubik-mono font-bold mx-6 text-center text-[#212121] whitespace-nowrap">PODIUMS</h2>
-      <hr class="flex-1 border-gray-600" />
+  <section>
+
+    <div class="flex items-center mb-12 max-w-6xl mx-auto px-4 md:px-0 lazy-load-js">
+      <hr class="flex-1 border-gray-600">
+      <img src="../images/logo_lecube.webp" class="mx-4" width="50px" height="50px">
+      <hr class="flex-1 border-gray-600">
     </div>
 
-    <div class="podium-thumbnail   relative group w-full max-w-xl aspect-[4/3] flex items-center justify-center">
-      <img src="../images/imggallerie/chevrymiel2025.webp" alt="Aperçu galerie podium"
-        class="rounded-xl w-full h-full object-cover shadow-lg transition-all duration-500 max-w-[320px] max-h-[240px]" />
-      <div
-        class="podium-overlay absolute inset-0 rounded-xl bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center pointer-events-none">
+    <div class="flex flex-col items-center italic mb-12 w-full mx-auto px-4 md:px-0 lazy-load-js">
+      <p class="text-center">Sur ordinateur, vous pouvez utiliser les flèches directionnelles de votre clavier
+        à travers nos galeries.</p>
+      <div class="flex justify-center mt-4 w-full">
+        <svg fill="#000000" width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M7.78 5.97a.75.75 0 00-1.06 0l-5.25 5.25a.75.75 0 000 1.06l5.25 5.25a.75.75 0 001.06-1.06L3.81 12.5h16.38l-3.97 3.97a.75.75 0 101.06 1.06l5.25-5.25a.75.75 0 000-1.06l-5.25-5.25a.75.75 0 10-1.06 1.06L20.19 11H3.81l3.97-3.97a.75.75 0 000-1.06z">
+            </path>
+          </g>
+        </svg>
       </div>
-      <button
-        onclick="document.getElementById('gallerie1').classList.remove('hidden');document.getElementById('podium-preview').classList.add('hidden');"
-        class="podium-btn absolute inset-0 m-auto h-12 w-40 flex items-center justify-center rounded-full bg-[#212121] text-white rubik-mono font-bold text-lg opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 pointer-events-none shadow-lg"
-        style="pointer-events: none;">
-        Chevry Miel<br> 2025
-      </button>
     </div>
-  </div>
+
+    <div class="flex flex-col md:flex-row items-center justify-center mx-auto py-24 gap-8 lazy-load-js">
+      <div class="flex flex-col items-center justify-center" id="podium-preview">
+        <div class="podium-thumbnail relative group w-full max-w-xl aspect-[4/3] flex items-center justify-center">
+          <img src="../images/imggallerie/chevrymiel2025.webp" alt="Aperçu galerie podium"
+            class="rounded-xl w-full h-full object-cover shadow-lg transition-all duration-500 max-w-[320px] max-h-[240px]" />
+          <div
+            class="podium-overlay absolute inset-0 rounded-xl bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center pointer-events-none">
+          </div>
+          <button
+            onclick="document.getElementById('galerie1').classList.remove('hidden');document.getElementById('podium-preview').classList.add('hidden');"
+            class="podium-btn absolute inset-0 m-auto h-12 w-40 flex items-center justify-center rounded-full bg-[#212121] text-white rubik-mono font-bold text-lg opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 pointer-events-none"
+            style="pointer-events: none;">
+            Podiums
+          </button>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center justify-center" id="tapistimerPreview">
+        <div class="tapistimer-thumbnail relative group w-full max-w-xl aspect-[4/3] flex items-center justify-center">
+          <img src="../images/imggallerie/tapis1.jpg" alt="Aperçu galerie tapistimer"
+            class="rounded-xl w-full h-full object-cover shadow-lg transition-all duration-500 max-w-[320px] max-h-[240px]" />
+          <div
+            class="tapistimer-overlay absolute inset-0 rounded-xl bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center pointer-events-none">
+          </div>
+          <button
+            onclick="document.getElementById('galerie2').classList.remove('hidden');document.getElementById('tapistimerPreview').classList.add('hidden');"
+            class="tapistimer-btn absolute inset-0 m-auto h-12 w-50 flex items-center justify-center rounded-full bg-[#212121] text-white rubik-mono font-bold text-lg opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 pointer-events-none"
+            style="pointer-events: none;">
+            Tapis & Timers
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- deuxième gallerie -->
-  <div class="w-full py-16 lazy-load-js" id="gallerie2">
+  <div class="w-full py-16 lazy-load-js hidden" id="galerie2">
     <div class="max-w-6xl mx-auto px-4 md:px-0">
 
       <div class="flex items-center mb-12">
@@ -200,55 +237,63 @@
                 class="w-full h-full object-fill hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="tapis & timers n°1"
                 data-description="Un timer de la marque QYToys, et un tapis offert à un participant du championnat de France de Tigery en mai 2023" />
-              <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers n°1</figcaption>
+              <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers n°1
+              </figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/tapis2.jpg" alt="tapis & timers n°2"
                 class="w-full object-cover h-full hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="tapis & timers n°2"
                 data-description="Un tapis de la marque YuXin Toys, connue pour ses produits de qualité et populaires chez de nombreux speedcubers" />
-              <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers n°2</figcaption>
+              <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers n°2
+              </figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/tapis3.jpg" alt="tapis & timers n°3"
                 class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="tapis & timers n°3"
                 data-description="Le stackmat G5 est largement utilisée en speedcubing." />
-              <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers n°3</figcaption>
+              <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers n°3
+              </figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/tapis4.jpg" alt="tapis & timers n°4"
                 class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="tapis & timers n°4" data-description="Un tapis et un timer Gan" />
-              <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers n°4</figcaption>
+              <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers n°4
+              </figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/tapis5.jpg" alt="tapis & timers n°5"
                 class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="tapis & timers n°5"
                 data-description="Un tapis Gan avec plus de motifs sur l'univers du rubik's cube et des puzzles, accompagné d'un timer" />
-              <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers n°5</figcaption>
+              <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers n°5
+              </figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/tapis6.jpg" alt="tapis & timers n°6"
                 class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="tapis & timers n°6"
                 data-description="Tapis et timer QY Toys, une marque connue pour ses accessoires de speedcubing accessibles" />
-              <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers n°6</figcaption>
+              <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers n°6
+              </figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/tapis7.jpg" alt="tapis & timers n°7"
                 class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="tapis & timers n°7"
                 data-description="Tapis Atoutcubes, une marque française spécialisée dans le speedcubing" />
-              <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers n°7</figcaption>
+              <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers n°7
+              </figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/tapis8.jpg" alt="tapis & timers n°8"
                 class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="tapis & timers n°8"
                 data-description="Tapis MoYu, une marque chinoise réputée pour ses produits de speedcubing" />
-              <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers n°8</figcaption>
+              <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers n°8
+              </figcaption>
             </figure>
           </div>
         </div>
@@ -257,12 +302,12 @@
   </div>
 
   <!-- N°3 gallerie -->
-  <div class="w-full py-16  lazy-load-js" id="gallerie3">
+  <div class="w-full py-16" id="gallerie3">
     <div class="max-w-6xl mx-auto px-4 md:px-0">
 
       <div class="flex items-center mb-12">
         <hr class="flex-1 border-gray-600">
-        <h2 class="text-3xl rubik-mono font-bold mx-6 text-center text-[#212121]">LA TROUSSE DU SPEEDCUBER</h2>
+        <h2 class="text-3xl rubik-mono font-bold mx-6 text-center text-[#212121] lazy-load-js lazy-load-img">LA TROUSSE DU SPEEDCUBER</h2>
         <hr class="flex-1 border-gray-600">
       </div>
 
@@ -274,14 +319,15 @@
               sm:grid-cols-3 sm:grid-rows-3
               md:grid-cols-4 md:grid-rows-3
             ">
-            <figure class="overflow-hidden rounded-xl shadow-lg bg-white col-span-2 md:col-span-2 flex flex-col">
+            <figure class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white col-span-2 md:col-span-2 flex flex-col">
               <img src="../images/imggallerie/cube4.webp" alt="Une rangée de cube"
                 class="w-full h-full object-fill hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="Une rangée de cube" data-description="Du 3x3 au 7x7" />
-              <figcaption class="text-center py-8 text-[15px] text-gray-600 rubik-mono">Une rangée de cube</figcaption>
+              <figcaption class="text-center py-8 text-[15px] text-gray-600 rubik-mono">Une rangée de cube
+              </figcaption>
             </figure>
             <figure
-              class="overflow-hidden rounded-xl shadow-lg bg-white col-span-2 md:col-span-2 md:col-start-3 flex flex-col">
+              class=" lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white col-span-2 md:col-span-2 md:col-start-3 flex flex-col">
               <img src="../images/imggallerie/cube2.webp" alt="Le matériel d'entretien pour un cube"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="Le matériel d'entretien pour un cube"
@@ -290,7 +336,7 @@
               </figcaption>
             </figure>
             <figure
-              class="overflow-hidden rounded-xl shadow-lg bg-white row-span-2 md:row-span-2 md:row-start-2 flex flex-col">
+              class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white row-span-2 md:row-span-2 md:row-start-2 flex flex-col">
               <img src="../images/imggallerie/cube3.webp" alt="Un sac de speedcuber"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="Un sac de speedcuber"
@@ -299,33 +345,33 @@
               </figcaption>
             </figure>
             <figure
-              class="overflow-hidden rounded-xl shadow-lg bg-white row-span-2 md:row-span-2 md:col-start-4 md:row-start-2 flex flex-col">
+              class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white row-span-2 md:row-span-2 md:col-start-4 md:row-start-2 flex flex-col">
               <img src="../images/imggallerie/cube9.webp" alt="La tour de cube"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="La tour de cube"
                 data-description="Malgré l'augmentation du nombre de tranches, la taille du cube reste la même." /><!-- droite -->
               <figcaption class="text-center py-8 text-[15px] text-gray-600 rubik-mono">La tour de cube</figcaption>
             </figure>
-            <figure class="overflow-hidden rounded-xl shadow-lg bg-white md:col-start-2 md:row-start-2 flex flex-col">
+            <figure class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white md:col-start-2 md:row-start-2 flex flex-col">
               <img src="../images/imggallerie/cube5.webp" alt="pyraminx"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="pyraminx"
                 data-description="Un cube pyraminx. Forme triangulaire, résolution intéressante." />
               <figcaption class="text-center py-4 text-[15px] text-gray-600 rubik-mono">Cube pyraminx</figcaption>
             </figure>
-            <figure class="overflow-hidden rounded-xl shadow-lg bg-white md:col-start-3 md:row-start-2 flex flex-col">
+            <figure class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white md:col-start-3 md:row-start-2 flex flex-col">
               <img src="../images/imggallerie/cube6.webp" alt="megaminx"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="megaminx" data-description="Cube megaminx. Dodécagone avec 12 faces uniques." />
               <figcaption class="text-center py-4 text-[15px] text-gray-600 rubik-mono">Cube megaminx</figcaption>
             </figure>
-            <figure class="overflow-hidden rounded-xl shadow-lg bg-white md:col-start-2 md:row-start-3 flex flex-col">
+            <figure class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white md:col-start-2 md:row-start-3 flex flex-col">
               <img src="../images/imggallerie/cube7.webp" alt="FTO"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="FTO" data-description="Cube FTO. Axes de rotation diagonaux, un défi pour les experts." />
               <figcaption class="text-center py-4 text-[15px] text-gray-600 rubik-mono">Cube FTO</figcaption>
             </figure>
-            <figure class="overflow-hidden rounded-xl shadow-lg bg-white md:col-start-3 md:row-start-3 flex flex-col">
+            <figure class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white md:col-start-3 md:row-start-3 flex flex-col">
               <img src="../images/imggallerie/cube1.webp" alt="Cube mirror 3x3"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="Cube mirror 3x3"
@@ -462,7 +508,7 @@
     // Pour 3 galeries, générer un carrousel pour chacune
     const galeries = [
       {
-        id: 'gallerie1',
+        id: 'galerie1',
         modalId: 'fullscreen-carousel-modal-galerie1',
         prevBtnId: 'carousel-prev-btn-galerie1',
         nextBtnId: 'carousel-next-btn-galerie1',
@@ -472,7 +518,7 @@
         imageSelector: '.grid .overflow-hidden img'
       },
       {
-        id: 'gallerie2',
+        id: 'galerie2',
         modalId: 'fullscreen-carousel-modal-galerie2',
         prevBtnId: 'carousel-prev-btn-galerie2',
         nextBtnId: 'carousel-next-btn-galerie2',
@@ -634,16 +680,22 @@
     });
 
 
-    // Ajout du clic sur le thumbnail de preview pour ouvrir la modale de la première image de galerie 1 (podium)
     var podiumPreview = document.querySelector('#podium-preview .podium-thumbnail img');
     if (podiumPreview) {
       podiumPreview.style.cursor = 'zoom-in';
       podiumPreview.addEventListener('click', function (e) {
-        // Affiche le modal plein écran de galerie 1 sur la première image
-        // Affiche la galerie 1 si elle était masquée (optionnel, selon votre logique)
-        // document.getElementById('gallerie1').classList.remove('hidden');
-        if (galerieRefs['gallerie1'] && galerieRefs['gallerie1'].openModalAtIndex) {
-          galerieRefs['gallerie1'].openModalAtIndex(0);
+        if (galerieRefs['galerie1'] && galerieRefs['galerie1'].openModalAtIndex) {
+          galerieRefs['galerie1'].openModalAtIndex(0);
+        }
+      });
+    }
+
+    var tapistimerPreview = document.querySelector('#tapistimerPreview .tapistimer-thumbnail img');
+    if (tapistimerPreview) {
+      tapistimerPreview.style.cursor = 'zoom-in';
+      tapistimerPreview.addEventListener('click', function (e) {
+        if (galerieRefs['galerie2'] && galerieRefs['galerie2'].openModalAtIndex) {
+          galerieRefs['galerie2'].openModalAtIndex(0);
         }
       });
     }
