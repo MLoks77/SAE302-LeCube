@@ -9,8 +9,7 @@ Site réalisé en :
 
 <h1>ATTENTION</h1>
 
-Pour une bonne expérience, veuillez visiter le webdocumentaire avec une connexion internet. Tailwind est installé localement, mais l'une des pages utilise le CDN (la connexion en ligne) pour garantir le bon fonctionnement de certaines fonctionnalités.
-Si vous visitez hors ligne, les animations GSAP ne fonctionneront pas.
+Pour une expérience optimale, veuillez visiter le webdocumentaire avec une connexion Internet. Tailwind est installé localement, mais l’une des pages utilise le CDN afin de garantir le bon fonctionnement de certaines fonctionnalités. Si vous consultez le site hors ligne, les animations GSAP ne fonctionneront pas.
 
 Liens utiles :
 https://github.com/MLoks77/SAE302
