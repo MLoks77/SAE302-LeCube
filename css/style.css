@@ -78,6 +78,43 @@
   background-repeat: no-repeat;
 }
 
+/* tapistimer */
+
+.tapistimer-thumbnail {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.tapistimer-thumbnail img {
+  transition: filter 0.3s;
+  display: block;
+}
+
+.tapistimer-thumbnail:hover img {
+  filter: brightness(0.6);
+}
+
+.tapistimer-overlay {
+  pointer-events: none;
+}
+
+.tapistimer-btn {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.group:hover .tapistimer-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.group:hover .tapistimer-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+/* podium */
+
 #podium-preview .podium-thumbnail {
   cursor: pointer;
   overflow: hidden;
